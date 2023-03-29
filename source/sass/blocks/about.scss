@@ -1,0 +1,32 @@
+.about {
+}
+
+.about__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding-top: 120px;
+  padding-bottom: 145px;
+}
+
+.about__wrapper {
+  width: 45%;
+  margin-right: 30px;
+}
+
+.about__title {
+  margin-bottom: 24px;
+}
+
+.about__text {
+  margin: 0;
+
+  font-family: "Montserrat", "Arial", "Helvetica", sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  color: $color-project-black;
+}
+
+.about__image {
+}

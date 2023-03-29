@@ -1,0 +1,142 @@
+.booking {
+  background-color: #d6eefb;
+  background-image: url("../img/background-booking-desktop.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/background-booking-desktop@2x.jpg");
+    background-size: cover;
+  }
+}
+
+.booking__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 50px 60px;
+}
+
+.booking__title-wrapper {
+  margin-top: -6px;
+  font-family: "Montserrat", "Arial", "Helvetica", sans-serif;
+  color: $color-project-black;
+}
+
+.booking__title {
+  margin: 0;
+  margin-bottom: 10px;
+
+  font-size: 40px;
+  line-height: 60px;
+  font-weight: 700;
+}
+
+.booking__title-explanaition {
+  max-width: 352px;
+  margin: 0;
+
+  font-size: 18px;
+  line-height: 27px;
+  font-weight: 400;
+}
+
+.booking__form {
+  display: flex;
+  flex-direction: column;
+
+  width: 403px;
+  padding: 44px 50px 50px;
+
+  font-family: "Montserrat", "Arial", "Helvetica", sans-serif;
+  color: $color-project-white;
+
+  background-color: $color-project-black;
+}
+
+.booking__form-text {
+  margin: 0;
+  margin-bottom: 27px;
+
+  font-size: 18px;
+  line-height: 27px;
+  font-weight: 500;
+}
+
+.booking__form-checkbox-wrapper {
+  position: relative;
+
+  display: flex;
+  align-items: center;
+
+  min-height: 18px;
+}
+
+.booking__form form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.booking__form label {
+  padding-left: 23px;
+
+  font-size: 10px;
+  line-height: 13px;
+  font-weight: 400;
+}
+
+.booking__form input {
+  width: 100%;
+  padding: 11px 0 11px 16px;
+  border: none;
+
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 40;
+  color: rgba(1, 28, 64, 0.7);
+
+  background-color: $color-project-white;
+}
+
+.booking__form input[type="checkbox"] + label::before {
+  content: "";
+
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  width: 18px;
+  height: 18px;
+
+  border-radius: 2px;
+
+  background-color: $color-project-white;
+
+  cursor: pointer;
+}
+
+.booking__form input[type="checkbox"]:checked + label::before {
+  background-image: url("../img/icons/tick-icon.svg");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+}
+
+.booking__form button {
+  width: 100%;
+  margin-top: 10px;
+  padding-top: 11px;
+  padding-bottom: 11px;
+
+  border: none;
+
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 600;
+
+  color: $color-project-black;
+
+  background-color: $color-project-white;
+}
