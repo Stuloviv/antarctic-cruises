@@ -16,49 +16,9 @@
   display: grid;
   grid-template-columns: repeat(4, 23%);
   gap: 30px;
+
+  perspective: 1000px;
 }
 
 .products__item {
-}
-
-.product {
-}
-
-.product__wrapper {
-  position: relative;
-}
-
-.product__title {
-  position: absolute;
-  bottom: 20px;
-  left: 30px;
-
-  margin: 0;
-
-  font-size: 18px;
-  line-height: 27px;
-  font-weight: 500;
-  color: $color-project-white;
-}
-
-.product__image {
-}
-
-.product__card {
-  display: none;
-}
-
-.product__card-title {
-}
-
-.product__card-list {
-}
-
-.product__card-term {
-}
-
-.product__card-definition {
-}
-
-.product__card-button {
 }

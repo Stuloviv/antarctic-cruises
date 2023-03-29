@@ -1453,9 +1453,7 @@ button,
   display: grid;
   -ms-grid-columns: 1fr 1fr 1fr;
   grid-template-columns: 1fr 1fr 1fr;
-  -webkit-column-gap: 40px;
-  -moz-column-gap: 40px;
-  column-gap: 40px;
+  gap: 40px;
 }
 
 .advantages__item {
@@ -1516,10 +1514,39 @@ button,
   -ms-grid-columns: (23%)[4];
   grid-template-columns: repeat(4, 23%);
   gap: 30px;
+  -webkit-perspective: 1000px;
+  perspective: 1000px;
+}
+
+.product {
+  position: relative;
+  min-height: 386px;
+  cursor: pointer;
+  -webkit-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+  -webkit-transition-duration: 1s;
+  -o-transition-duration: 1s;
+  transition-duration: 1s;
+}
+
+.product:hover,
+.product:focus-within {
+  -webkit-transform: rotateY(180deg);
+  transform: rotateY(180deg);
+}
+
+.product:hover .product__card,
+.product:focus-within .product__card {
+  z-index: 1;
 }
 
 .product__wrapper {
-  position: relative;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
 }
 
 .product__title {
@@ -1533,8 +1560,67 @@ button,
   color: #f9fbfd;
 }
 
+.product__image {
+  display: block;
+  height: 100%;
+  -o-object-fit: cover;
+  object-fit: cover;
+}
+
 .product__card {
-  display: none;
+  position: relative;
+  z-index: -1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  height: 100%;
+  padding: 29px 25px;
+  color: #f9fbfd;
+  background-color: #011c40;
+  -webkit-transform: rotateY(180deg);
+  transform: rotateY(180deg);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.product__card-title {
+  margin: 0;
+  margin-bottom: 14px;
+  font-size: 18px;
+  line-height: 27px;
+  font-weight: 500;
+}
+
+.product__card-list {
+  margin: 0;
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 400;
+}
+
+.product__card-term {
+  margin: 0;
+  margin-bottom: 2px;
+}
+
+.product__card-definition {
+  margin: 0;
+  margin-bottom: 9px;
+}
+
+.product__card-button {
+  width: 100%;
+  margin-top: auto;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border: none;
+  line-height: 21px;
+  font-weight: 600;
+  background-color: #f9fbfd;
 }
 
 .booking {
@@ -1639,7 +1725,7 @@ button,
   font-size: 14px;
   line-height: 21px;
   font-weight: 40;
-  color: rgba(1, 28, 64, 0.7);
+  color: #011c40;
   background-color: #f9fbfd;
 }
 
@@ -1672,6 +1758,143 @@ button,
   font-weight: 600;
   color: #011c40;
   background-color: #f9fbfd;
+}
+
+.contacts__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+
+.contacts__map {
+  min-width: 560px;
+  height: 306px;
+  background-color: #589be1;
+  background-image: url("../img/map-desktop.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.contacts__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  max-width: 500px;
+  margin-left: 30px;
+  font-family: "Montserrat", "Arial", "Helvetica", sans-serif;
+  color: #011c40;
+}
+
+.contacts__text {
+  margin: 0;
+  margin-bottom: 33px;
+  font-size: 18px;
+  line-height: 27px;
+  font-weight: 500;
+}
+
+.contacts__address {
+  margin: 0;
+  margin-bottom: 20px;
+  padding-left: 28px;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+  background-image: url("../img/icons/marker-icon.svg");
+  background-repeat: no-repeat;
+}
+
+.contacts__link {
+  padding-left: 28px;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+  background-image: url("../img/icons/phone-icon.svg");
+  background-repeat: no-repeat;
+}
+
+.footer {
+  background-color: #011c40;
+}
+
+.footer__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding-top: 49px;
+  padding-bottom: 44px;
+}
+
+.footer__logo {
+  margin-right: 40px;
+}
+
+.footer__logo-icon {
+  fill: #f9fbfd;
+}
+
+.footer__navigation {
+  max-width: 70%;
+}
+
+.footer__navigation-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-column-gap: 33px;
+  -moz-column-gap: 33px;
+  column-gap: 33px;
+  row-gap: 10px;
+}
+
+.footer__navigation-link {
+  font-family: "Montserrat", "Arial", "Helvetica", sans-serif;
+  font-size: 16px;
+  line-height: 19px;
+  font-weight: 500;
+  color: #f9fbfd;
+}
+
+.footer__social {
+  width: 200px;
+  margin-left: auto;
+}
+
+.footer__social-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+  -webkit-column-gap: 27px;
+  -moz-column-gap: 27px;
+  column-gap: 27px;
+  row-gap: 10px;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+
+.footer__social-icon {
+  fill: #f9fbfd;
 }
 
 /* @mixin hover-focus {
@@ -1827,6 +2050,11 @@ button,
 
   .booking {
     background-image: url("../img/background-booking-desktop@2x.jpg");
+    background-size: cover;
+  }
+
+  .contacts__map {
+    background-image: url("../img/map-desktop@2x.jpg");
     background-size: cover;
   }
 }

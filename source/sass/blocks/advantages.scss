@@ -24,7 +24,7 @@
 .advantages__list {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  column-gap: 40px;
+  gap: 40px;
 }
 
 .advantages__item {
