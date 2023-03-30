@@ -124,6 +124,10 @@
   background-position: 50% 50%;
 }
 
+.booking__form input[type="checkbox"]:focus + label::before {
+  background-color: #a7d3eb;
+}
+
 .booking__form button {
   width: 100%;
   margin-top: 10px;

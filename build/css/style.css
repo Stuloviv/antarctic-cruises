@@ -1520,7 +1520,7 @@ button,
 
 .product {
   position: relative;
-  min-height: 386px;
+  height: 386px;
   cursor: pointer;
   -webkit-transform-style: preserve-3d;
   transform-style: preserve-3d;
@@ -1551,7 +1551,7 @@ button,
 
 .product__title {
   position: absolute;
-  bottom: 20px;
+  bottom: 22px;
   left: 30px;
   margin: 0;
   font-size: 18px;
@@ -1578,7 +1578,7 @@ button,
   -ms-flex-direction: column;
   flex-direction: column;
   height: 100%;
-  padding: 29px 25px;
+  padding: 29px 25px 34px;
   color: #f9fbfd;
   background-color: #011c40;
   -webkit-transform: rotateY(180deg);
@@ -1596,15 +1596,18 @@ button,
 }
 
 .product__card-list {
+  height: 225px;
   margin: 0;
   font-size: 14px;
   line-height: 20px;
   font-weight: 400;
+  overflow: scroll;
 }
 
 .product__card-term {
   margin: 0;
   margin-bottom: 2px;
+  font-weight: 500;
 }
 
 .product__card-definition {
@@ -1618,6 +1621,7 @@ button,
   padding-top: 10px;
   padding-bottom: 10px;
   border: none;
+  font-size: 14px;
   line-height: 21px;
   font-weight: 600;
   background-color: #f9fbfd;
@@ -1745,6 +1749,10 @@ button,
   background-image: url("../img/icons/tick-icon.svg");
   background-repeat: no-repeat;
   background-position: 50% 50%;
+}
+
+.booking__form input[type=checkbox]:focus + label::before {
+  background-color: #a7d3eb;
 }
 
 .booking__form button {
