@@ -143,4 +143,15 @@
   color: $color-project-black;
 
   background-color: $color-project-white;
+
+  cursor: pointer;
+
+  &:hover {
+    background-color: #a7d3eb;
+  }
+
+  &:active {
+    background-color: #a7d3eb;
+    box-shadow: inset 2px 2px $color-project-black;
+  }
 }

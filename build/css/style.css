@@ -1766,6 +1766,17 @@ button,
   font-weight: 600;
   color: #011c40;
   background-color: #f9fbfd;
+  cursor: pointer;
+}
+
+.booking__form button:hover {
+  background-color: #a7d3eb;
+}
+
+.booking__form button:active {
+  background-color: #a7d3eb;
+  -webkit-box-shadow: inset 2px 2px #011c40;
+  box-shadow: inset 2px 2px #011c40;
 }
 
 .contacts__container {
