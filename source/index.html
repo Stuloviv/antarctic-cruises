@@ -15,10 +15,10 @@
 <body>
   <div class="wrapper">
     <header class="header">
-      <div class="header__container container">
+      <div class="header__container container is-close">
         <a class="header__logo" href="#">
           <p class="visually-hidden">Логотип сайта круизов в антарктику, он же переход на главную страницу</p>
-          <svg class="header__logo-icon header__logo-icon--desktop" aria-hidden="true" focusable="false" width="70"
+          <svg class="header__logo-icon" aria-hidden="true" focusable="false" width="70"
             height="38" viewBox="0 0 70 38" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path fill-rule="evenodd" clip-rule="evenodd"
               d="M0.903517 31.125L14.6726 12.5429L18.4395 14.556L27.4026 0L32.9879 6.65881L35.0665 4.95532L43.1199 15.1755L48.8355 8.36191L64.8126 31.125L49.42 11.7689L47.0817 19.8984L49.225 26.3249L35.456 7.35558L35.3069 13.8279L43.1199 31.125L28.5064 4.33574L32.7282 18.8145L26.8181 4.72292L23.5706 14.0916L24.2198 7.97472L16.1013 30.0411L17.0753 20.75L13.6981 17.0338L0.903517 31.125Z" />
@@ -28,7 +28,7 @@
               d="M70 35.4157C52.8956 24.5171 27.4568 39.6838 14.4189 36.1717C28.5467 43.0283 54.8482 27.8361 70 35.4157Z" />
           </svg>
         </a>
-        <nav class="header__navigation header__navigation--closed header__navigation--nojs">
+        <nav class="header__navigation">
           <ul class="header__navigation-list list-null">
             <li class="header__navigation-item">
               <a href="#advantages-anchor" class="header__navigation-link">Преимущества</a>
@@ -48,14 +48,14 @@
           </button>
         </nav>
       </div>
-    </header>
-    <main class="main">
-      <section class="main__header">
-        <div class="main__header-container container">
-          <h1 class="main__header-title">Круизы в&nbsp;Антарктику</h1>
-          <p class="main__header-slogan">Волшебный мир айсбергов и&nbsp;пингвинов</p>
+      <section class="header__promo promo">
+        <div class="promo__container container">
+          <h1 class="promo__title">Круизы в&nbsp;Антарктику</h1>
+          <p class="promo__slogan">Волшебный мир айсбергов и&nbsp;пингвинов</p>
         </div>
       </section>
+    </header>
+    <main class="main">
       <section class="about">
         <div class="about__container container">
           <div class="about__wrapper">
@@ -65,22 +65,10 @@
               ледяные айсберги, несколько видов пингвинов, китов, морских котиков и&nbsp;многое другое.</p>
           </div>
           <picture>
-            <!-- <source media="(max-width: 320px)" type="image/webp"
-                    srcset="img/services/services-building-mobile.webp 1x, img/services/services-building-mobile@2x.webp 2x"
-                    width="270" height="250">
-                  <source media="(max-width: 1023px)" type="image/webp"
-                    srcset="img/services/services-building-tablet.webp 1x, img/services/services-building-tablet@2x.webp 2x"
-                    width="670" height="250">
                   <source type="image/webp"
-                    srcset="img/services/services-building-desktop.webp 1x, img/services/services-building-desktop@2x.webp 2x"
-                    width="350" height="650"> -->
+                    srcset="img/about-image.webp 1x, img/about-image@2x.webp 2x"
+                    width="560" height="301">
 
-            <!-- <source media="(max-width: 320px)"
-                    srcset="img/services/services-building-mobile.jpg 1x, img/services/services-building-mobile@2x.jpg 2x"
-                    width="270" height="250">
-                  <source media="(max-width: 1023px)"
-                    srcset="img/services/services-building-tablet.jpg 1x, img/services/services-building-tablet@2x.jpg 2x"
-                    width="670" height="250"> -->
             <img class="about__image" src="img/about-image.jpg" srcset="img/about-image@2x.jpg 2x"
               alt="Фото пингвинов, которых Вы увидете во время круиза." width="560" height="301">
           </picture>
@@ -117,22 +105,22 @@
               <div class="product__wrapper">
                 <h3 class="product__title">Круиз “Астория”</h3>
                 <picture>
-                  <!-- <source media="(max-width: 320px)" type="image/webp"
-                    srcset="img/services/services-building-mobile.webp 1x, img/services/services-building-mobile@2x.webp 2x"
-                    width="270" height="250">
+                  <source media="(max-width: 767px)" type="image/webp"
+                    srcset="img/services/services-astoria-mobile.webp 1x, img/services/services-astoria-mobile@2x.webp 2x"
+                    width="270" height="386">
                   <source media="(max-width: 1023px)" type="image/webp"
-                    srcset="img/services/services-building-tablet.webp 1x, img/services/services-building-tablet@2x.webp 2x"
-                    width="670" height="250">-->
+                    srcset="img/services/services-astoria-tablet.webp 1x, img/services/services-astoria-tablet@2x.webp 2x"
+                    width="670" height="250">
                   <source type="image/webp"
                     srcset="img/services/services-astoria.webp 1x, img/services/services-astoria@2x.webp 2x" width="260"
                     height="386">
 
-                  <!-- <source media="(max-width: 320px)"
-                    srcset="img/services/services-building-mobile.jpg 1x, img/services/services-building-mobile@2x.jpg 2x"
-                    width="270" height="250">
+                  <source media="(max-width: 767px)"
+                    srcset="img/services/services-astoria-mobile.jpg 1x, img/services/services-astoria-mobile@2x.jpg 2x"
+                    width="270" height="386">
                   <source media="(max-width: 1023px)"
-                    srcset="img/services/services-building-tablet.jpg 1x, img/services/services-building-tablet@2x.jpg 2x"
-                    width="670" height="250"> -->
+                    srcset="img/services/services-astoria-tablet.jpg 1x, img/services/services-astoria-tablet@2x.jpg 2x"
+                    width="309" height="386">
                   <img class="product__image" src="img/services/services-astoria.jpg"
                     srcset="img/services/services-astoria@2x.jpg 2x"
                     alt="Фото видов, которые Вы увидите во время круиза “Астория”." width="260" height="386">
@@ -158,22 +146,22 @@
               <div class="product__wrapper">
                 <h3 class="product__title">Круиз “Элайн”</h3>
                 <picture>
-                  <!-- <source media="(max-width: 320px)" type="image/webp"
-                    srcset="img/services/services-building-mobile.webp 1x, img/services/services-building-mobile@2x.webp 2x"
-                    width="270" height="250">
+                  <source media="(max-width: 767px)" type="image/webp"
+                    srcset="img/services/services-leonor-mobile.webp 1x, img/services/services-leonor-mobile@2x.webp 2x"
+                    width="270" height="386">
                   <source media="(max-width: 1023px)" type="image/webp"
-                    srcset="img/services/services-building-tablet.webp 1x, img/services/services-building-tablet@2x.webp 2x"
-                    width="670" height="250">-->
+                    srcset="img/services/services-leonor-tablet.webp 1x, img/services/services-leonor-tablet@2x.webp 2x"
+                    width="309" height="386">
                   <source type="image/webp"
                     srcset="img/services/services-leonor.webp 1x, img/services/services-leonor@2x.webp 2x" width="260"
                     height="386">
 
-                  <!-- <source media="(max-width: 320px)"
-                    srcset="img/services/services-building-mobile.jpg 1x, img/services/services-building-mobile@2x.jpg 2x"
-                    width="270" height="250">
+                  <source media="(max-width: 767px)"
+                    srcset="img/services/services-leonor-mobile.jpg 1x, img/services/services-leonor-mobile@2x.jpg 2x"
+                    width="270" height="386">
                   <source media="(max-width: 1023px)"
-                    srcset="img/services/services-building-tablet.jpg 1x, img/services/services-building-tablet@2x.jpg 2x"
-                    width="670" height="250"> -->
+                    srcset="img/services/services-leonor-tablet.jpg 1x, img/services/services-leonor-tablet@2x.jpg 2x"
+                    width="309" height="386">
                   <img class="product__image" src="img/services/services-leonor.jpg"
                     srcset="img/services/services-leonor@2x.jpg"
                     alt="Фото видов, которые Вы увидите во время круиза Элайн" width="260" height="386">
@@ -198,22 +186,22 @@
               <div class="product__wrapper">
                 <h3 class="product__title">Круиз “Атлантис”</h3>
                 <picture>
-                  <!-- <source media="(max-width: 320px)" type="image/webp"
-                    srcset="img/services/services-building-mobile.webp 1x, img/services/services-building-mobile@2x.webp 2x"
-                    width="270" height="250">
+                  <source media="(max-width: 767px)" type="image/webp"
+                    srcset="img/services/services-atlantis-mobile.webp 1x, img/services/services-atlantis-mobile@2x.webp 2x"
+                    width="270" height="386">
                   <source media="(max-width: 1023px)" type="image/webp"
-                    srcset="img/services/services-building-tablet.webp 1x, img/services/services-building-tablet@2x.webp 2x"
-                    width="670" height="250"> -->
+                    srcset="img/services/services-atlantis-tablet.webp 1x, img/services/services-atlantis-tablet@2x.webp 2x"
+                    width="309" height="386">
                   <source type="image/webp"
                     srcset="img/services/services-atlantis.webp 1x, img/services/services-atlantis@2x.webp 2x"
                     width="260" height="386">
 
-                  <!-- <source media="(max-width: 320px)"
-                    srcset="img/services/services-building-mobile.jpg 1x, img/services/services-building-mobile@2x.jpg 2x"
-                    width="270" height="250">
+                  <source media="(max-width: 767px)"
+                    srcset="img/services/services-atlantis-mobile.jpg 1x, img/services/services-atlantis-mobile@2x.jpg 2x"
+                    width="270" height="386">
                   <source media="(max-width: 1023px)"
-                    srcset="img/services/services-building-tablet.jpg 1x, img/services/services-building-tablet@2x.jpg 2x"
-                    width="670" height="250"> -->
+                    srcset="img/services/services-atlantis-tablet.jpg 1x, img/services/services-atlantis-tablet@2x.jpg 2x"
+                    width="309" height="386">
                   <img class="product__image" src="img/services/services-atlantis.jpg"
                     srcset="img/services/services-atlantis@2x.jpg 2x"
                     alt="Фото видов, которые Вы увидите во время круиза “Атлантис”" width="260" height="386">
@@ -239,23 +227,23 @@
               <div class="product__wrapper">
                 <h3 class="product__title">Круиз “Одиссей”</h3>
                 <picture>
-                  <!-- <source media="(max-width: 320px)" type="image/webp"
-                    srcset="img/services/services-building-mobile.webp 1x, img/services/services-building-mobile@2x.webp 2x"
-                    width="270" height="250">
+                  <source media="(max-width: 767px)" type="image/webp"
+                    srcset="img/services/services-odissey-mobile.webp 1x, img/services/services-odissey-mobile@2x.webp 2x"
+                    width="270" height="386">
                   <source media="(max-width: 1023px)" type="image/webp"
-                    srcset="img/services/services-building-tablet.webp 1x, img/services/services-building-tablet@2x.webp 2x"
-                    width="670" height="250">
-                  <source type="image/webp" -->
+                    srcset="img/services/services-odissey-tablet.webp 1x, img/services/services-odissey-tablet@2x.webp 2x"
+                    width="309" height="386">
+                  <source type="image/webp"
                   <source type="image/webp"
                     srcset="img/services/services-odissey.webp 1x, img/services/services-odissey@2x.webp 2x" width="260"
                     height="386">
 
-                  <!-- <source media="(max-width: 320px)"
-                    srcset="img/services/services-building-mobile.jpg 1x, img/services/services-building-mobile@2x.jpg 2x"
-                    width="270" height="250">
+                  <source media="(max-width: 767px)"
+                    srcset="img/services/services-odissey-mobile.jpg 1x, img/services/services-odissey-mobile@2x.jpg 2x"
+                    width="270" height="386">
                   <source media="(max-width: 1023px)"
-                    srcset="img/services/services-building-tablet.jpg 1x, img/services/services-building-tablet@2x.jpg 2x"
-                    width="670" height="250"> -->
+                    srcset="img/services/services-odissey-tablet.jpg 1x, img/services/services-odissey-tablet@2x.jpg 2x"
+                    width="309" height="386">
                   <img class="product__image" src="img/services/services-odissey.jpg"
                     srcset="img/services/services-odissey@2x.jpg 2x"
                     alt="Фото видов, которые Вы увидите во время круиза “Одиссей”" width="260" height="386">
@@ -280,22 +268,22 @@
               <div class="product__wrapper">
                 <h3 class="product__title">Круиз “Олимпия”</h3>
                 <picture>
-                  <!-- <source media="(max-width: 320px)" type="image/webp"
-                    srcset="img/services/services-building-mobile.webp 1x, img/services/services-building-mobile@2x.webp 2x"
-                    width="270" height="250">
+                  <source media="(max-width: 767px)" type="image/webp"
+                    srcset="img/services/services-olimpia-mobile.webp 1x, img/services/services-olimpia-mobile@2x.webp 2x"
+                    width="270" height="386">
                   <source media="(max-width: 1023px)" type="image/webp"
-                    srcset="img/services/services-building-tablet.webp 1x, img/services/services-building-tablet@2x.webp 2x"
-                    width="670" height="250"> -->
+                    srcset="img/services/services-olimpia-tablet.webp 1x, img/services/services-olimpia-tablet@2x.webp 2x"
+                    width="309" height="386">
                   <source type="image/webp"
                     srcset="img/services/services-olimpia.webp 1x, img/services/services-olimpia@2x.webp 2x" width="260"
                     height="386">
 
-                  <!-- <source media="(max-width: 320px)"
-                    srcset="img/services/services-building-mobile.jpg 1x, img/services/services-building-mobile@2x.jpg 2x"
-                    width="270" height="250">
+                  <source media="(max-width: 767px)"
+                    srcset="img/services/services-olimpia-mobile.jpg 1x, img/services/services-olimpia-mobile@2x.jpg 2x"
+                    width="270" height="386">
                   <source media="(max-width: 1023px)"
-                    srcset="img/services/services-building-tablet.jpg 1x, img/services/services-building-tablet@2x.jpg 2x"
-                    width="670" height="250"> -->
+                    srcset="img/services/services-olimpia-tablet.jpg 1x, img/services/services-olimpia-tablet@2x.jpg 2x"
+                    width="309" height="386">
                   <img class="product__image" src="img/services/services-olimpia.jpg"
                     srcset="img/services/services-olimpia@2x.jpg 2x"
                     alt="Фото видов, которые Вы увидите во время круиза “Олимпия”" width="260" height="386">
@@ -321,22 +309,22 @@
               <div class="product__wrapper">
                 <h3 class="product__title">Круиз “Аврора”</h3>
                 <picture>
-                  <!-- <source media="(max-width: 320px)" type="image/webp"
-                    srcset="img/services/services-building-mobile.webp 1x, img/services/services-building-mobile@2x.webp 2x"
-                    width="270" height="250">
+                  <source media="(max-width: 767px)" type="image/webp"
+                    srcset="img/services/services-aurora-mobile.webp 1x, img/services/services-aurora-mobile@2x.webp 2x"
+                    width="270" height="386">
                   <source media="(max-width: 1023px)" type="image/webp"
-                    srcset="img/services/services-building-tablet.webp 1x, img/services/services-building-tablet@2x.webp 2x"
-                    width="670" height="250"> -->
+                    srcset="img/services/services-aurora-tablet.webp 1x, img/services/services-aurora-tablet@2x.webp 2x"
+                    width="309" height="386">
                   <source type="image/webp"
                     srcset="img/services/services-aurora.webp 1x, img/services/services-aurora@2x.webp 2x" width="260"
                     height="386">
 
-                  <!-- <source media="(max-width: 320px)"
-                    srcset="img/services/services-building-mobile.jpg 1x, img/services/services-building-mobile@2x.jpg 2x"
-                    width="270" height="250">
+                  <source media="(max-width: 767px)"
+                    srcset="img/services/services-aurora-mobile.jpg 1x, img/services/services-aurora-mobile@2x.jpg 2x"
+                    width="270" height="386">
                   <source media="(max-width: 1023px)"
-                    srcset="img/services/services-building-tablet.jpg 1x, img/services/services-building-tablet@2x.jpg 2x"
-                    width="670" height="250"> -->
+                    srcset="img/services/services-aurora-tablet.jpg 1x, img/services/services-aurora-tablet@2x.jpg 2x"
+                    width="309" height="386">
                   <img class="product__image" src="img/services/services-aurora.jpg"
                     srcset="img/services/services-aurora@2x.jpg 2x"
                     alt="Фото видов, которые Вы увидите во время круиза “Аврора”" width="260" height="386">
@@ -361,22 +349,22 @@
               <div class="product__wrapper">
                 <h3 class="product__title">Круиз “Леонор”</h3>
                 <picture>
-                  <!-- <source media="(max-width: 320px)" type="image/webp"
-                    srcset="img/services/services-building-mobile.webp 1x, img/services/services-building-mobile@2x.webp 2x"
-                    width="270" height="250">
+                  <source media="(max-width: 767px)" type="image/webp"
+                    srcset="img/services/services-leonor-mobile.webp 1x, img/services/services-leonor-mobile@2x.webp 2x"
+                    width="270" height="386">
                   <source media="(max-width: 1023px)" type="image/webp"
-                    srcset="img/services/services-building-tablet.webp 1x, img/services/services-building-tablet@2x.webp 2x"
-                    width="670" height="250"> -->
+                    srcset="img/services/services-leonor-tablet.webp 1x, img/services/services-leonor-tablet@2x.webp 2x"
+                    width="309" height="386">
                   <source type="image/webp"
                     srcset="img/services/services-leonor.webp 1x, img/services/services-leonor@2x.webp 2x" width="260"
                     height="386">
 
-                  <!-- <source media="(max-width: 320px)"
-                    srcset="img/services/services-building-mobile.jpg 1x, img/services/services-building-mobile@2x.jpg 2x"
-                    width="270" height="250">
+                  <source media="(max-width: 767px)"
+                    srcset="img/services/services-leonor-mobile.jpg 1x, img/services/services-leonor-mobile@2x.jpg 2x"
+                    width="270" height="386">
                   <source media="(max-width: 1023px)"
-                    srcset="img/services/services-building-tablet.jpg 1x, img/services/services-building-tablet@2x.jpg 2x"
-                    width="670" height="250"> -->
+                    srcset="img/services/services-leonor-tablet.jpg 1x, img/services/services-leonor-tablet@2x.jpg 2x"
+                    width="309" height="386">
                   <img class="product__image" src="img/services/services-leonor.jpg"
                     srcset="img/services/services-leonor@2x.jpg 2x"
                     alt="Фото видов, которые Вы увидите во время круиза “Леонор”." width="260" height="386">
@@ -402,22 +390,22 @@
               <div class="product__wrapper">
                 <h3 class="product__title">Круиз “Минион - 1”</h3>
                 <picture>
-                  <!-- <source media="(max-width: 320px)" type="image/webp"
-                    srcset="img/services/services-building-mobile.webp 1x, img/services/services-building-mobile@2x.webp 2x"
-                    width="270" height="250">
+                  <source media="(max-width: 767px)" type="image/webp"
+                    srcset="img/services/services-minion-mobile.webp 1x, img/services/services-minion-mobile@2x.webp 2x"
+                    width="270" height="386">
                   <source media="(max-width: 1023px)" type="image/webp"
-                    srcset="img/services/services-building-tablet.webp 1x, img/services/services-building-tablet@2x.webp 2x"
-                    width="670" height="250"> -->
+                    srcset="img/services/services-minion-tablet.webp 1x, img/services/services-minion-tablet@2x.webp 2x"
+                    width="309" height="386">
                   <source type="image/webp"
                     srcset="img/services/services-minion.webp 1x, img/services/services-minion@2x.webp 2x" width="260"
                     height="386">
 
-                  <!-- <source media="(max-width: 320px)"
-                    srcset="img/services/services-building-mobile.jpg 1x, img/services/services-building-mobile@2x.jpg 2x"
-                    width="270" height="250">
+                  <source media="(max-width: 767px)"
+                    srcset="img/services/services-minion-mobile.jpg 1x, img/services/services-minion-mobile@2x.jpg 2x"
+                    width="270" height="386">
                   <source media="(max-width: 1023px)"
-                    srcset="img/services/services-building-tablet.jpg 1x, img/services/services-building-tablet@2x.jpg 2x"
-                    width="670" height="250"> -->
+                    srcset="img/services/services-minion-tablet.jpg 1x, img/services/services-minion-tablet@2x.jpg 2x"
+                    width="309" height="386">
                   <img class="product__image" src="img/services/services-minion.jpg"
                     srcset="img/services/services-minion@2x.jpg 2x"
                     alt="Фото видов, которые Вы увидите во время круиза “Минион&nbsp;&mdash; 1”" width="260"
@@ -488,7 +476,7 @@
             <p class="contacts__text">У&nbsp;вас ещё остались вопросы или сомнения? Приезжайте к&nbsp;нам в&nbsp;офис
               и&nbsp;мы&nbsp;вам все расскажем.</p>
             <p class="contacts__address">
-              г. Санкт Петербург, ул. Большая Конюшенная, 19/8
+              г. Санкт Петербург, <br>ул. Большая Конюшенная, 19/8
             </p>
             <a class="contacts__link" href="tel:+78002000000">8-800-200-00-00</a>
           </div>

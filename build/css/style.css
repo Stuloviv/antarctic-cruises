@@ -1304,7 +1304,13 @@ button,
 }
 
 .header {
-  position: relative;
+  background-color: #589be1;
+  background-image: url("../img/background-header-desktop.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 .header__container {
@@ -1321,7 +1327,13 @@ button,
   padding-bottom: 35px;
 }
 
+.header__logo {
+  margin-top: 2px;
+}
+
 .header__logo-icon {
+  width: 70px;
+  height: 38px;
   fill: #f9fbfd;
 }
 
@@ -1356,38 +1368,43 @@ button,
   display: none;
 }
 
-.main__header {
-  margin-top: -115px;
-  background-color: #589be1;
-  background-image: url("../img/background-header-desktop.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+.is-close .header__navigation-toggle::before {
+  content: "";
+  position: absolute;
+  top: 15px;
+  right: 50%;
+  width: 24px;
+  height: 2px;
+  -webkit-transform: translate(50%, 50%);
+  -ms-transform: translate(50%, 50%);
+  transform: translate(50%, 50%);
+  background-color: #f9fbfd;
+  -webkit-box-shadow: 0 6px 0 0 #f9fbfd, 0 12px 0 0 #f9fbfd;
+  box-shadow: 0 6px 0 0 #f9fbfd, 0 12px 0 0 #f9fbfd;
 }
 
-.main__header-container {
-  padding: 270px 0 278px 95px;
+.promo {
+  font-family: "Montserrat", "Arial", "Helvetica", sans-serif;
+  color: #f9fbfd;
 }
 
-.main__header-title {
+.promo__container {
+  padding: 155px 0 278px 95px;
+}
+
+.promo__title {
   margin: 0;
   margin-bottom: 12px;
-  font-family: "Montserrat", "Arial", "Helvetica", sans-serif;
   font-size: 54px;
   line-height: 66px;
   font-weight: 700;
-  color: #f9fbfd;
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
-.main__header-slogan {
+.promo__slogan {
   margin: 0;
-  font-family: "Montserrat", "Arial", "Helvetica", sans-serif;
   font-size: 20px;
   line-height: 24px;
-  color: #f9fbfd;
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
@@ -1429,6 +1446,10 @@ button,
   font-size: 16px;
   line-height: 24px;
   color: #011c40;
+}
+
+.about__image {
+  display: block;
 }
 
 .advantages {
@@ -1562,6 +1583,7 @@ button,
 
 .product__image {
   display: block;
+  width: 100%;
   height: 100%;
   -o-object-fit: cover;
   object-fit: cover;
@@ -1601,7 +1623,7 @@ button,
   font-size: 14px;
   line-height: 20px;
   font-weight: 400;
-  overflow: scroll;
+  overflow-y: scroll;
 }
 
 .product__card-term {
@@ -1780,12 +1802,11 @@ button,
 }
 
 .contacts__container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
+  gap: 100px;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
@@ -1794,7 +1815,7 @@ button,
 }
 
 .contacts__map {
-  min-width: 560px;
+  width: 560px;
   height: 306px;
   background-color: #589be1;
   background-image: url("../img/map-desktop.jpg");
@@ -1811,8 +1832,6 @@ button,
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
   flex-direction: column;
-  max-width: 500px;
-  margin-left: 30px;
   font-family: "Montserrat", "Arial", "Helvetica", sans-serif;
   color: #011c40;
 }
@@ -1834,6 +1853,10 @@ button,
   font-weight: 400;
   background-image: url("../img/icons/marker-icon.svg");
   background-repeat: no-repeat;
+}
+
+.contacts__address br {
+  display: none;
 }
 
 .contacts__link {
@@ -1893,7 +1916,7 @@ button,
 }
 
 .footer__social {
-  width: 200px;
+  width: 20%;
   margin-left: auto;
 }
 
@@ -1957,14 +1980,288 @@ button,
   }
 */
 
+@media (-webkit-min-device-pixel-ratio: 2) and (min-width: 1024px), (-o-min-device-pixel-ratio: 2/1) and (min-width: 1024px), (min-resolution: 2dppx) and (min-width: 1024px) {
+  .header {
+    background-image: url("../img/background-header-desktop@2x.jpg");
+  }
+
+  .advantages {
+    background-image: url("../img/background-advantages-desktop@2x.jpg");
+  }
+
+  .booking {
+    background-image: url("../img/background-booking-desktop@2x.jpg");
+  }
+}
+
 @media (max-width: 1365px) {
-  .container {
+  .header__container {
+    padding-left: 45px;
+    padding-right: 45px;
+  }
+
+  .about__container {
+    padding-left: 45px;
+    padding-right: 45px;
+  }
+
+  .advantages__container {
+    padding-left: 45px;
+    padding-right: 45px;
+  }
+
+  .contacts__container {
+    gap: 30px;
+    padding-left: 45px;
+    padding-right: 45px;
+  }
+
+  .footer__container {
     padding-left: 45px;
     padding-right: 45px;
   }
 }
 
+@media (max-width: 1023px) {
+  .container {
+    max-width: 680px;
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .header {
+    background-image: url("../img/background-header-tablet.jpg");
+    -webkit-box-shadow: none;
+    box-shadow: none;
+  }
+
+  .header__container {
+    -webkit-box-align: normal;
+    -ms-flex-align: normal;
+    align-items: normal;
+    padding-top: 28px;
+    padding-bottom: 28px;
+  }
+
+  .header__logo-icon {
+    width: 38px;
+    height: 20px;
+  }
+
+  .header__navigation {
+    max-width: 90%;
+  }
+
+  .header__navigation-list {
+    -webkit-column-gap: 24px;
+    -moz-column-gap: 24px;
+    column-gap: 24px;
+  }
+
+  .header__navigation-link {
+    font-size: 14px;
+    line-height: 17px;
+  }
+
+  .promo__container {
+    padding: 183px 0 275px 0;
+  }
+
+  .promo__title {
+    font-size: 50px;
+    line-height: 61px;
+    text-shadow: none;
+  }
+
+  .promo__slogan {
+    font-size: 18px;
+    line-height: 22px;
+    text-shadow: none;
+  }
+
+  .second-title {
+    font-size: 26px;
+    line-height: 36px;
+  }
+
+  .about__container {
+    -webkit-box-align: normal;
+    -ms-flex-align: normal;
+    align-items: normal;
+    padding-top: 100px;
+    padding-bottom: 93px;
+  }
+
+  .about__wrapper {
+    width: 320px;
+    margin-right: 0;
+  }
+
+  .about__title {
+    max-width: 210px;
+    margin-top: -9px;
+    margin-bottom: 16px;
+  }
+
+  .about__image {
+    width: 324px;
+    height: 174px;
+  }
+
+  .advantages {
+    background-image: url("../img/background-advantages-tablet.jpg");
+  }
+
+  .advantages__container {
+    padding: 91px 0 98px;
+  }
+
+  .advantages__list {
+    gap: 30px;
+  }
+
+  .advantages__item {
+    padding: 73px 16px 27px 20px;
+    background-position: 20px 26px;
+  }
+
+  .advantages__item--ship {
+    background-size: 21px 26px;
+  }
+
+  .advantages__item--allinclusiv {
+    background-size: 27px 26px;
+  }
+
+  .advantages__item--excursion {
+    background-size: 36px 26px;
+  }
+
+  .advantages__item-title {
+    line-height: 25px;
+  }
+
+  .products__container {
+    padding: 92px 15px 100px;
+  }
+
+  .products__title {
+    margin-bottom: 51px;
+  }
+
+  .products__list {
+    -ms-grid-columns: (309px)[2];
+    grid-template-columns: repeat(2, 309px);
+  }
+
+  .product__title {
+    bottom: 27px;
+    left: 37px;
+  }
+
+  .product__card {
+    padding: 29px 35px 34px;
+  }
+
+  .booking {
+    background-image: url("../img/background-booking-tablet.jpg");
+  }
+
+  .booking__container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    padding: 94px 0 100px;
+  }
+
+  .booking__title-wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    margin-bottom: 52px;
+  }
+
+  .booking__title {
+    margin-bottom: 5px;
+    font-size: 34px;
+    line-height: 51px;
+  }
+
+  .contacts__container {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+
+  .contacts__map {
+    width: 324px;
+    height: 335px;
+  }
+
+  .contacts__address br {
+    display: block;
+  }
+
+  .footer__logo {
+    margin-right: 25px;
+  }
+
+  .footer__logo-icon {
+    width: 38px;
+    height: 20px;
+  }
+
+  .footer__navigation-list {
+    -webkit-column-gap: 23px;
+    -moz-column-gap: 23px;
+    column-gap: 23px;
+    margin-top: -5px;
+  }
+
+  .footer__navigation-link {
+    font-size: 12px;
+    line-height: 14px;
+  }
+
+  .footer__social-list {
+    -webkit-column-gap: 18px;
+    -moz-column-gap: 18px;
+    column-gap: 18px;
+  }
+
+  .footer__social-icon {
+    height: 16px;
+  }
+}
+
+@media (-webkit-min-device-pixel-ratio: 2) and (max-width: 1023px), (-o-min-device-pixel-ratio: 2/1) and (max-width: 1023px), (min-resolution: 2dppx) and (max-width: 1023px) {
+  .header {
+    background-image: url("../img/background-header-tablet@2x.jpg");
+  }
+
+  .advantages {
+    background-image: url("../img/background-advantages-tablet@2x.jpg");
+  }
+
+  .booking {
+    background-image: url("../img/background-booking-tablet@2x.jpg");
+  }
+}
+
 @media (max-width: 767px) {
+  .container {
+    max-width: 100%;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
   .modal__wrapper {
     padding: 60px 16px;
   }
@@ -1976,6 +2273,131 @@ button,
 
   .modal--fit-content .modal__content {
     width: 100%;
+  }
+
+  .header__container {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+
+  .header__logo-icon {
+    width: 42px;
+    height: 22px;
+  }
+
+  .header__navigation-toggle {
+    position: absolute;
+    top: 10px;
+    right: 0;
+    display: block;
+    width: 54px;
+    height: 42px;
+    border: none;
+    background-color: transparent;
+  }
+
+  .is-close .header__navigation-list {
+    display: none;
+  }
+
+  .is-open .header__logo {
+    display: none;
+  }
+
+  .is-open .header__navigation {
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: block;
+    width: 89%;
+    height: 100vh;
+    background-color: #f9fbfd;
+    background-image: url("../img/icons/logo/logo-menu.svg");
+    background-repeat: no-repeat;
+    background-position: 15px 20px;
+  }
+
+  .is-open .header__navigation-list {
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+    row-gap: 10px;
+    padding: 75px 30px 0 15px;
+  }
+
+  .is-open .header__navigation-link {
+    display: block;
+    padding: 10px;
+    font-size: 18px;
+    line-height: 21px;
+    color: #011c40;
+  }
+
+  .is-open .header__navigation-toggle::before,
+  .is-open .header__navigation-toggle::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: 11px;
+    width: 18px;
+    height: 2px;
+    background-color: #011c40;
+  }
+
+  .is-open .header__navigation-toggle::before {
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+  }
+
+  .is-open .header__navigation-toggle::after {
+    -webkit-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+  }
+
+  .promo__title {
+    font-size: 36px;
+    line-height: 45px;
+  }
+
+  .advantages__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+
+  .products__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+
+  .booking__form {
+    width: 100%;
+  }
+
+  .contacts__container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+    -ms-flex-direction: column-reverse;
+    flex-direction: column-reverse;
+  }
+
+  .contacts__map {
+    width: 290px;
+    height: 316px;
   }
 }
 
@@ -2042,6 +2464,12 @@ button,
   }
 }
 
+@media (max-width: 470px) {
+  .header {
+    background-image: url("../img/background-header-mobile.jpg");
+  }
+}
+
 @media (hover: hover) {
   .btn:hover:not(.focus-visible) {
     opacity: 0.8;
@@ -2053,27 +2481,5 @@ button,
 
   .custom-select__item:hover:not(.focus-visible) {
     background-color: rgba(0, 0, 0, 0.4);
-  }
-}
-
-@media (-webkit-min-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 2/1), (min-resolution: 2dppx) {
-  .main__header {
-    background-image: url("../img/background-header-desktop@2x.jpg");
-    background-size: cover;
-  }
-
-  .advantages {
-    background-image: url("../img/background-advantages-desktop@2x.jpg");
-    background-size: cover;
-  }
-
-  .booking {
-    background-image: url("../img/background-booking-desktop@2x.jpg");
-    background-size: cover;
-  }
-
-  .contacts__map {
-    background-image: url("../img/map-desktop@2x.jpg");
-    background-size: cover;
   }
 }

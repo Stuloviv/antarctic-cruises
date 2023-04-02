@@ -5,14 +5,35 @@
   background-size: cover;
   background-position: center;
 
+  @media (max-width: 1023px) {
+    background-image: url("../img/background-advantages-tablet.jpg");
+  }
+}
+
+.advantages {
   @media (min-resolution: 2dppx) {
-    background-image: url("../img/background-advantages-desktop@2x.jpg");
-    background-size: cover;
+
+    @media (max-width: 1023px) {
+      background-image: url("../img/background-advantages-tablet@2x.jpg");
+    }
+
+    @media (min-width: 1024px) {
+      background-image: url("../img/background-advantages-desktop@2x.jpg");
+    }
   }
 }
 
 .advantages__container {
   padding: 110px 0 120px;
+
+  @media (max-width: 1365px) {
+    padding-left: 45px;
+    padding-right: 45px;
+  }
+
+  @media (max-width: 1023px) {
+    padding: 91px 0 98px;
+  }
 }
 
 .advantages__title {
@@ -25,6 +46,15 @@
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   gap: 40px;
+
+  @media (max-width: 1023px) {
+    gap: 30px;
+  }
+
+  @media (max-width: 767px) {
+    display: flex;
+    flex-direction: column;
+  }
 }
 
 .advantages__item {
@@ -33,20 +63,37 @@
   background-color: $color-project-white;
   background-position: 30px 29px;
 
-  &--ship {
-    background-image: url("../img/icons/ship-icon.svg");
-    background-repeat: no-repeat;
+  @media (max-width: 1023px) {
+    padding: 73px 16px 27px 20px;
 
+    background-position: 20px 26px;
   }
+}
 
-  &--allinclusiv {
-    background-image: url("../img/icons/ticks-icon.svg");
-    background-repeat: no-repeat;
+.advantages__item--ship {
+  background-image: url("../img/icons/ship-icon.svg");
+  background-repeat: no-repeat;
+
+  @media (max-width: 1023px) {
+    background-size: 21px 26px;
   }
+}
 
-  &--excursion {
-    background-image: url("../img/icons/boat-icon.svg");
-    background-repeat: no-repeat;
+.advantages__item--allinclusiv {
+  background-image: url("../img/icons/ticks-icon.svg");
+  background-repeat: no-repeat;
+
+  @media (max-width: 1023px) {
+    background-size: 27px 26px;
+  }
+}
+
+.advantages__item--excursion {
+  background-image: url("../img/icons/boat-icon.svg");
+  background-repeat: no-repeat;
+
+  @media (max-width: 1023px) {
+    background-size: 36px 26px;
   }
 }
 
@@ -58,6 +105,10 @@
   font-size: 18px;
   line-height: 27px;
   font-weight: 500;
+
+  @media (max-width: 1023px) {
+    line-height: 25px;
+  }
 }
 
 .advantages__item-text {

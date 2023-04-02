@@ -6,4 +6,9 @@
   line-height: 42px;
   font-weight: 600;
   color: $color-project-black;
+
+  @media (max-width: 1023px) {
+    font-size: 26px;
+    line-height: 36px;
+  }
 }

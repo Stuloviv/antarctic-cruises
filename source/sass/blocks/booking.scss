@@ -5,9 +5,21 @@
   background-size: cover;
   background-position: center;
 
+  @media (max-width: 1023px) {
+    background-image: url("../img/background-booking-tablet.jpg");
+  }
+}
+
+.booking {
   @media (min-resolution: 2dppx) {
-    background-image: url("../img/background-booking-desktop@2x.jpg");
-    background-size: cover;
+
+    @media (max-width: 1023px) {
+      background-image: url("../img/background-booking-tablet@2x.jpg");
+    }
+
+    @media (min-width: 1024px) {
+      background-image: url("../img/background-booking-desktop@2x.jpg");
+    }
   }
 }
 
@@ -17,12 +29,26 @@
   align-items: center;
 
   padding: 50px 60px;
+
+  @media (max-width: 1023px) {
+    flex-direction: column;
+
+    padding: 94px 0 100px;
+  }
 }
 
 .booking__title-wrapper {
   margin-top: -6px;
   font-family: "Montserrat", "Arial", "Helvetica", sans-serif;
   color: $color-project-black;
+
+  @media (max-width: 1023px) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    margin-bottom: 52px;
+  }
 }
 
 .booking__title {
@@ -32,6 +58,13 @@
   font-size: 40px;
   line-height: 60px;
   font-weight: 700;
+
+  @media (max-width: 1023px) {
+    margin-bottom: 5px;
+
+    font-size: 34px;
+    line-height: 51px;
+  }
 }
 
 .booking__title-explanaition {
@@ -54,6 +87,10 @@
   color: $color-project-white;
 
   background-color: $color-project-black;
+
+  @media (max-width: 767px) {
+    width: 100%;
+  }
 }
 
 .booking__form-text {
@@ -101,7 +138,7 @@
   background-color: $color-project-white;
 }
 
-.booking__form input[type="checkbox"] + label::before {
+.booking__form input[type="checkbox"]+label::before {
   content: "";
 
   position: absolute;
@@ -118,13 +155,13 @@
   cursor: pointer;
 }
 
-.booking__form input[type="checkbox"]:checked + label::before {
+.booking__form input[type="checkbox"]:checked+label::before {
   background-image: url("../img/icons/tick-icon.svg");
   background-repeat: no-repeat;
   background-position: 50% 50%;
 }
 
-.booking__form input[type="checkbox"]:focus + label::before {
+.booking__form input[type="checkbox"]:focus+label::before {
   background-color: #a7d3eb;
 }
 
