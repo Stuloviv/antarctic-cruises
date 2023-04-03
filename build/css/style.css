@@ -1309,8 +1309,8 @@ button,
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  -webkit-box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 .header__container {
@@ -1323,7 +1323,7 @@ button,
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  padding-top: 35px;
+  padding-top: 33px;
   padding-bottom: 35px;
 }
 
@@ -1371,7 +1371,7 @@ button,
 .is-close .header__navigation-toggle::before {
   content: "";
   position: absolute;
-  top: 15px;
+  top: 13px;
   right: 50%;
   width: 24px;
   height: 2px;
@@ -1398,14 +1398,18 @@ button,
   font-size: 54px;
   line-height: 66px;
   font-weight: 700;
-  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 .promo__slogan {
   margin: 0;
   font-size: 20px;
   line-height: 24px;
-  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.promo__slogan br {
+  display: none;
 }
 
 .second-title {
@@ -1483,6 +1487,10 @@ button,
   background-position: 30px 29px;
 }
 
+.advantages__item br {
+  display: none;
+}
+
 .advantages__item--ship {
   background-image: url("../img/icons/ship-icon.svg");
   background-repeat: no-repeat;
@@ -1535,8 +1543,8 @@ button,
   -ms-grid-columns: (23%)[4];
   grid-template-columns: repeat(4, 23%);
   gap: 30px;
-  -webkit-perspective: 1000px;
-  perspective: 1000px;
+  -webkit-perspective: 10000px;
+  perspective: 10000px;
 }
 
 .product {
@@ -1581,7 +1589,7 @@ button,
   color: #f9fbfd;
 }
 
-.product__image {
+.product img {
   display: block;
   width: 100%;
   height: 100%;
@@ -1690,6 +1698,10 @@ button,
   font-size: 18px;
   line-height: 27px;
   font-weight: 400;
+}
+
+.booking__title-explanaition br {
+  display: none;
 }
 
 .booking__form {
@@ -1866,6 +1878,7 @@ button,
   font-weight: 400;
   background-image: url("../img/icons/phone-icon.svg");
   background-repeat: no-repeat;
+  background-position-y: 2px;
 }
 
 .footer {
@@ -2205,6 +2218,14 @@ button,
     height: 335px;
   }
 
+  .contacts__text {
+    margin-bottom: 28px;
+  }
+
+  .contacts__address {
+    background-position-y: 4px;
+  }
+
   .contacts__address br {
     display: block;
   }
@@ -2276,7 +2297,7 @@ button,
   }
 
   .header__container {
-    padding-top: 20px;
+    padding-top: 18px;
     padding-bottom: 20px;
   }
 
@@ -2301,7 +2322,7 @@ button,
   }
 
   .is-open .header__logo {
-    display: none;
+    visibility: hidden;
   }
 
   .is-open .header__navigation {
@@ -2318,6 +2339,10 @@ button,
   }
 
   .is-open .header__navigation-list {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
     -webkit-box-pack: start;
     -ms-flex-pack: start;
     justify-content: flex-start;
@@ -2356,9 +2381,64 @@ button,
     transform: rotate(-45deg);
   }
 
+  .promo__container {
+    padding-top: 107px;
+    padding-bottom: 179px;
+  }
+
   .promo__title {
+    margin-bottom: 11px;
     font-size: 36px;
     line-height: 45px;
+  }
+
+  .promo__slogan {
+    font-size: 16px;
+  }
+
+  .promo__slogan br {
+    display: block;
+  }
+
+  .second-title {
+    font-size: 24px;
+    line-height: 33px;
+  }
+
+  .about__container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    padding-top: 58px;
+    padding-bottom: 85px;
+  }
+
+  .about__wrapper {
+    width: 100%;
+    margin-bottom: 43px;
+  }
+
+  .about__title {
+    margin-top: 0;
+  }
+
+  .about__image {
+    width: 100%;
+    height: auto;
+  }
+
+  .advantages {
+    background-image: url("../img/background-advantages-mobile.jpg");
+  }
+
+  .advantages__container {
+    padding-top: 58px;
+    padding-bottom: 67px;
+  }
+
+  .advantages__title {
+    margin-bottom: 32px;
   }
 
   .advantages__list {
@@ -2371,18 +2451,102 @@ button,
     flex-direction: column;
   }
 
+  .advantages__item {
+    padding-top: 71px;
+    padding-bottom: 23px;
+  }
+
+  .advantages__item br {
+    display: block;
+  }
+
+  .advantages__item-text {
+    max-width: 100%;
+  }
+
+  .products__container {
+    padding-top: 58px;
+    padding-bottom: 65px;
+  }
+
+  .products__title {
+    margin-bottom: 32px;
+  }
+
   .products__list {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
+    -ms-grid-columns: (270px)[2];
+    grid-template-columns: repeat(2, 270px);
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+  }
+
+  .product__title {
+    bottom: 17px;
+    left: 25px;
+  }
+
+  .product img {
+    width: 270px;
+  }
+
+  .product__card {
+    padding-right: 25px;
+    padding-left: 25px;
+  }
+
+  .booking {
+    background-image: url("../img/background-booking-mobile.jpg");
+  }
+
+  .booking__container {
+    padding-top: 65px;
+    padding-bottom: 65px;
+  }
+
+  .booking__title-wrapper {
+    margin-bottom: 34px;
+  }
+
+  .booking__title {
+    margin-bottom: 14px;
+    font-size: 24px;
+    line-height: 31px;
+    text-align: center;
+  }
+
+  .booking__title-explanaition {
+    font-size: 16px;
+    line-height: 22px;
+    text-align: center;
+  }
+
+  .booking__title-explanaition br {
+    display: block;
   }
 
   .booking__form {
     width: 100%;
+    padding: 35px 30px 40px;
+  }
+
+  .booking__form-text {
+    margin-bottom: 28px;
+    line-height: 25px;
+    text-align: center;
+  }
+
+  .booking__form label {
+    padding-left: 28px;
+  }
+
+  .booking__form input[type=checkbox] + label::before {
+    width: 20px;
+    height: 20px;
+  }
+
+  .booking__form button {
+    margin-top: 4px;
   }
 
   .contacts__container {
@@ -2393,11 +2557,66 @@ button,
     -webkit-box-direction: reverse;
     -ms-flex-direction: column-reverse;
     flex-direction: column-reverse;
+    gap: 36px;
+    padding-top: 58px;
+    padding-bottom: 65px;
   }
 
   .contacts__map {
-    width: 290px;
+    width: 100%;
     height: 316px;
+  }
+
+  .contacts__text {
+    max-width: 320px;
+  }
+
+  .footer__container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+    padding-top: 40px;
+    padding-bottom: 33px;
+  }
+
+  .footer__logo {
+    margin-bottom: 20px;
+  }
+
+  .footer__logo-icon {
+    width: 42px;
+    height: 22px;
+  }
+
+  .footer__navigation-list {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    row-gap: 8px;
+    margin-bottom: 22px;
+  }
+
+  .footer__social {
+    width: 50%;
+    margin-left: -3px;
+  }
+
+  .footer__social-list {
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+    -webkit-column-gap: 20px;
+    -moz-column-gap: 20px;
+    column-gap: 20px;
+  }
+
+  .footer__social-icon {
+    width: 16px;
   }
 }
 
@@ -2464,7 +2683,37 @@ button,
   }
 }
 
+@media (-webkit-min-device-pixel-ratio: 2) and (max-width: 767px), (-o-min-device-pixel-ratio: 2/1) and (max-width: 767px), (min-resolution: 2dppx) and (max-width: 767px) {
+  .advantages {
+    background-image: url("../img/background-advantages-mobile@2x.jpg");
+  }
+
+  .booking {
+    background-image: url("../img/background-booking-mobile@2x.jpg");
+  }
+}
+
+@media (max-width: 620px) {
+  .products__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    width: 270px;
+    margin: 0 auto;
+  }
+}
+
 @media (max-width: 470px) {
+  .header {
+    background-image: url("../img/background-header-mobile.jpg");
+  }
+}
+
+@media (-webkit-min-device-pixel-ratio: 2) and (max-width: 470px), (-o-min-device-pixel-ratio: 2/1) and (max-width: 470px), (min-resolution: 2dppx) and (max-width: 470px) {
   .header {
     background-image: url("../img/background-header-mobile.jpg");
   }

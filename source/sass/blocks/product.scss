@@ -42,13 +42,22 @@
     bottom: 27px;
     left: 37px;
   }
+
+  @media (max-width: 767px) {
+    bottom: 17px;
+    left: 25px;
+  }
 }
 
-.product__image {
+.product img {
   display: block;
   width: 100%;
   height: 100%;
   object-fit: cover;
+
+  @media (max-width: 767px) {
+    width: 270px;
+  }
 }
 
 .product__card {
@@ -70,6 +79,11 @@
 
   @media (max-width: 1023px) {
     padding: 29px 35px 34px;
+  }
+
+  @media (max-width: 767px) {
+    padding-right: 25px;
+    padding-left: 25px;
   }
 }
 
@@ -115,8 +129,4 @@
   font-weight: 600;
 
   background-color: $color-project-white;
-
-  @media (max-width: 1023px) {
-
-  }
 }

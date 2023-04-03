@@ -8,10 +8,15 @@
   @media (max-width: 1023px) {
     background-image: url("../img/background-advantages-tablet.jpg");
   }
-}
 
-.advantages {
+  @media (max-width: 767px) {
+    background-image: url("../img/background-advantages-mobile.jpg");
+  }
+
   @media (min-resolution: 2dppx) {
+    @media (max-width: 767px) {
+      background-image: url("../img/background-advantages-mobile@2x.jpg");
+    }
 
     @media (max-width: 1023px) {
       background-image: url("../img/background-advantages-tablet@2x.jpg");
@@ -34,12 +39,21 @@
   @media (max-width: 1023px) {
     padding: 91px 0 98px;
   }
+
+  @media (max-width: 767px) {
+    padding-top: 58px;
+    padding-bottom: 67px;
+  }
 }
 
 .advantages__title {
   margin-bottom: 50px;
 
   text-align: center;
+
+  @media (max-width: 767px) {
+    margin-bottom: 32px;
+  }
 }
 
 .advantages__list {
@@ -63,10 +77,23 @@
   background-color: $color-project-white;
   background-position: 30px 29px;
 
+  & br {
+    display: none;
+  }
+
   @media (max-width: 1023px) {
     padding: 73px 16px 27px 20px;
 
     background-position: 20px 26px;
+  }
+
+  @media (max-width: 767px) {
+    padding-top: 71px;
+    padding-bottom: 23px;
+
+    & br {
+      display: block;
+    }
   }
 }
 
@@ -119,4 +146,8 @@
   font-size: 14px;
   line-height: 19px;
   font-weight: 400;
+
+  @media (max-width: 767px) {
+    max-width: 100%;
+  }
 }

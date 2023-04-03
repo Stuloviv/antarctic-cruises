@@ -28,9 +28,3 @@ headerToggleElement.addEventListener('click', () => {
     window.scrollLock.enableScrolling();
   }
 });
-
-
-// headerElement.addEventListener('click', () => {
-//   window.scrollLock.enableScrolling();
-// })
-

@@ -8,10 +8,15 @@
   @media (max-width: 1023px) {
     background-image: url("../img/background-booking-tablet.jpg");
   }
-}
 
-.booking {
+  @media (max-width: 767px) {
+    background-image: url("../img/background-booking-mobile.jpg");
+  }
+
   @media (min-resolution: 2dppx) {
+    @media (max-width: 767px) {
+      background-image: url("../img/background-booking-mobile@2x.jpg");
+    }
 
     @media (max-width: 1023px) {
       background-image: url("../img/background-booking-tablet@2x.jpg");
@@ -35,6 +40,11 @@
 
     padding: 94px 0 100px;
   }
+
+  @media (max-width: 767px) {
+    padding-top: 65px;
+    padding-bottom: 65px;
+  }
 }
 
 .booking__title-wrapper {
@@ -48,6 +58,10 @@
     align-items: center;
 
     margin-bottom: 52px;
+  }
+
+  @media (max-width: 767px) {
+    margin-bottom: 34px;
   }
 }
 
@@ -65,6 +79,14 @@
     font-size: 34px;
     line-height: 51px;
   }
+
+  @media (max-width: 767px) {
+    margin-bottom: 14px;
+
+    font-size: 24px;
+    line-height: 31px;
+    text-align: center;
+  }
 }
 
 .booking__title-explanaition {
@@ -74,6 +96,20 @@
   font-size: 18px;
   line-height: 27px;
   font-weight: 400;
+
+  & br {
+    display: none;
+  }
+
+  @media (max-width: 767px) {
+    font-size: 16px;
+    line-height: 22px;
+    text-align: center;
+
+    & br {
+      display: block;
+    }
+  }
 }
 
 .booking__form {
@@ -90,6 +126,7 @@
 
   @media (max-width: 767px) {
     width: 100%;
+    padding: 35px 30px 40px;
   }
 }
 
@@ -100,6 +137,12 @@
   font-size: 18px;
   line-height: 27px;
   font-weight: 500;
+
+  @media (max-width: 767px) {
+    margin-bottom: 28px;
+    line-height: 25px;
+    text-align: center;
+  }
 }
 
 .booking__form-checkbox-wrapper {
@@ -123,6 +166,10 @@
   font-size: 10px;
   line-height: 13px;
   font-weight: 400;
+
+  @media (max-width: 767px) {
+    padding-left: 28px;
+  }
 }
 
 .booking__form input {
@@ -138,7 +185,7 @@
   background-color: $color-project-white;
 }
 
-.booking__form input[type="checkbox"]+label::before {
+.booking__form input[type="checkbox"] + label::before {
   content: "";
 
   position: absolute;
@@ -153,15 +200,20 @@
   background-color: $color-project-white;
 
   cursor: pointer;
+
+  @media (max-width: 767px) {
+    width: 20px;
+    height: 20px;
+  }
 }
 
-.booking__form input[type="checkbox"]:checked+label::before {
+.booking__form input[type="checkbox"]:checked + label::before {
   background-image: url("../img/icons/tick-icon.svg");
   background-repeat: no-repeat;
   background-position: 50% 50%;
 }
 
-.booking__form input[type="checkbox"]:focus+label::before {
+.booking__form input[type="checkbox"]:focus + label::before {
   background-color: #a7d3eb;
 }
 
@@ -182,6 +234,10 @@
   background-color: $color-project-white;
 
   cursor: pointer;
+
+  @media (max-width: 767px) {
+    margin-top: 4px;
+  }
 
   &:hover {
     background-color: #a7d3eb;
