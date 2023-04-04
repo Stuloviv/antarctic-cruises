@@ -899,20 +899,20 @@ button,
   cursor: pointer;
   -webkit-transform-style: preserve-3d;
   transform-style: preserve-3d;
-  -webkit-transition-duration: 1s;
-  -o-transition-duration: 1s;
-  transition-duration: 1s;
+  -webkit-perspective: 1000px;
+  perspective: 1000px;
 }
 
-.product:hover,
-.product:focus-within {
+.product:hover .product__wrapper,
+.product:focus-within .product__wrapper {
   -webkit-transform: rotateY(180deg);
   transform: rotateY(180deg);
 }
 
 .product:hover .product__card,
 .product:focus-within .product__card {
-  z-index: 1;
+  -webkit-transform: rotateY(360deg);
+  transform: rotateY(360deg);
 }
 
 .product__wrapper {
@@ -922,6 +922,9 @@ button,
   height: 100%;
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
+  -webkit-transition-duration: 1s;
+  -o-transition-duration: 1s;
+  transition-duration: 1s;
 }
 
 .product h3 {
@@ -945,7 +948,6 @@ button,
 
 .product__card {
   position: relative;
-  z-index: -1;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -957,6 +959,9 @@ button,
   padding: 29px 25px 34px;
   color: #f9fbfd;
   background-color: #011c40;
+  -webkit-transition-duration: 1s;
+  -o-transition-duration: 1s;
+  transition-duration: 1s;
   -webkit-transform: rotateY(180deg);
   transform: rotateY(180deg);
   -webkit-backface-visibility: hidden;

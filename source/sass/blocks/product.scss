@@ -6,14 +6,16 @@
   cursor: pointer;
 
   transform-style: preserve-3d;
-  transition-duration: 1s;
+  perspective: 1000px;
 
   &:hover,
   &:focus-within {
-    transform: rotateY(180deg);
+    .product__wrapper {
+      transform: rotateY(180deg);
+    }
 
     .product__card {
-      z-index: 1;
+      transform: rotateY(360deg);
     }
   }
 }
@@ -22,8 +24,11 @@
   position: absolute;
   top: 0;
   left: 0;
+
   height: 100%;
+
   backface-visibility: hidden;
+  transition-duration: 1s;
 }
 
 .product h3 {
@@ -62,7 +67,6 @@
 
 .product__card {
   position: relative;
-  z-index: -1;
 
   display: flex;
   flex-direction: column;
@@ -74,6 +78,7 @@
 
   background-color: $color-project-black;
 
+  transition-duration: 1s;
   transform: rotateY(180deg);
   backface-visibility: hidden;
 

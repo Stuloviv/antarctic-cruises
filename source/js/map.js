@@ -8,9 +8,9 @@ function init() {
     center: [59.938631, 30.323037],
     // Увеличение карты при запуске
     zoom: 15.5,
-  }, {
-    searchControlProvider: 'yandex#search',
+    controls: ['smallMapDefaultSet'],
   });
+  myMap.controls.remove('searchControl');
 
   // Создаём макет содержимого.
   let MyIconContentLayout = ymaps.templateLayoutFactory.createClass(
