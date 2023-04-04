@@ -26,7 +26,7 @@
   backface-visibility: hidden;
 }
 
-.product__title {
+.product h3 {
   position: absolute;
   bottom: 22px;
   left: 30px;
@@ -87,7 +87,7 @@
   }
 }
 
-.product__card-title {
+.product__card span {
   margin: 0;
   margin-bottom: 14px;
 
@@ -105,14 +105,14 @@
   overflow-y: scroll;
 }
 
-.product__card-term {
+.product__card-list dt {
   margin: 0;
   margin-bottom: 2px;
 
   font-weight: 500;
 }
 
-.product__card-definition {
+.product__card-list dd {
   margin: 0;
   margin-bottom: 9px;
 }
