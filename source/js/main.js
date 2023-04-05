@@ -1,4 +1,4 @@
-import './map.js';
+// import './map.js';
 import './mobile-menu.js';
 
 import {iosVhFix} from './utils/ios-vh-fix';
