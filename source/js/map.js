@@ -8,9 +8,11 @@ function init() {
     center: [59.938631, 30.323037],
     // Увеличение карты при запуске
     zoom: 15.5,
-    controls: ['smallMapDefaultSet'],
+    controls: [],
+  }, {
+    suppressMapOpenBlock: true,
   });
-  myMap.controls.remove('searchControl');
+  // myMap.controls.remove('searchControl');
 
   // Создаём макет содержимого.
   let MyIconContentLayout = ymaps.templateLayoutFactory.createClass(
