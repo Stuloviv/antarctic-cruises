@@ -72,7 +72,7 @@
 }
 
 .advantages__item {
-  padding: 81px 30px 46px;
+  padding: 81px 30px 41px;
 
   background-color: $color-project-white;
   background-position: 30px 29px;
@@ -82,14 +82,14 @@
   }
 
   @media (max-width: 1023px) {
-    padding: 73px 16px 27px 20px;
+    padding: 73px 16px 22px 20px;
 
     background-position: 20px 26px;
   }
 
   @media (max-width: 767px) {
     padding-top: 71px;
-    padding-bottom: 23px;
+    padding-bottom: 18px;
 
     & br {
       display: block;
@@ -141,6 +141,7 @@
 .advantages__item p {
   max-width: 288px;
   margin: 0;
+  margin-bottom: 5px;
 
   font-family: "Montserrat", "Arial", "Helvetica", sans-serif;
   font-size: 14px;

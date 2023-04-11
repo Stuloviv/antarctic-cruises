@@ -828,7 +828,7 @@ button,
 }
 
 .advantages__item {
-  padding: 81px 30px 46px;
+  padding: 81px 30px 41px;
   background-color: #f9fbfd;
   background-position: 30px 29px;
 }
@@ -864,6 +864,7 @@ button,
 .advantages__item p {
   max-width: 288px;
   margin: 0;
+  margin-bottom: 5px;
   font-family: "Montserrat", "Arial", "Helvetica", sans-serif;
   font-size: 14px;
   line-height: 19px;
@@ -1105,6 +1106,7 @@ button,
   font-size: 10px;
   line-height: 13px;
   font-weight: 400;
+  cursor: pointer;
 }
 
 .booking__form input {
@@ -1181,7 +1183,7 @@ button,
   width: 560px;
   height: 306px;
   background-color: #589be1;
-  background-image: url("../img/map-desktop.jpg");
+  background-image: url("../img/map-desktop.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -1205,6 +1207,10 @@ button,
   font-size: 18px;
   line-height: 27px;
   font-weight: 500;
+}
+
+.contacts__text br {
+  display: none;
 }
 
 .contacts__address {
@@ -1485,7 +1491,7 @@ button,
   }
 
   .advantages__item {
-    padding: 73px 16px 27px 20px;
+    padding: 73px 16px 22px 20px;
     background-position: 20px 26px;
   }
 
@@ -1627,6 +1633,12 @@ button,
   }
 }
 
+@media (max-width: 768px) {
+  .contacts__address br {
+    display: none;
+  }
+}
+
 @media (max-width: 767px) {
   .container {
     max-width: 100%;
@@ -1686,6 +1698,7 @@ button,
     justify-content: flex-start;
     row-gap: 10px;
     padding: 75px 30px 0 15px;
+    overflow: scroll;
   }
 
   .is-open .header__navigation-link {
@@ -1791,7 +1804,7 @@ button,
 
   .advantages__item {
     padding-top: 71px;
-    padding-bottom: 23px;
+    padding-bottom: 18px;
   }
 
   .advantages__item br {
@@ -1905,8 +1918,8 @@ button,
     height: 316px;
   }
 
-  .contacts__text {
-    max-width: 320px;
+  .contacts__text br {
+    display: block;
   }
 
   .footer__container {
@@ -1991,5 +2004,11 @@ button,
 @media (-webkit-min-device-pixel-ratio: 2) and (max-width: 470px), (-o-min-device-pixel-ratio: 2/1) and (max-width: 470px), (min-resolution: 2dppx) and (max-width: 470px) {
   .header {
     background-image: url("../img/background-header-mobile.jpg");
+  }
+}
+
+@media (max-width: 450px) {
+  .contacts__text br {
+    display: none;
   }
 }

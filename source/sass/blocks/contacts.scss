@@ -34,7 +34,7 @@
   height: 306px;
 
   background-color: #589be1;
-  background-image: url("../img/map-desktop.jpg");
+  background-image: url("../img/map-desktop.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -66,12 +66,24 @@
   line-height: 27px;
   font-weight: 500;
 
+  & br {
+    display: none;
+  }
+
   @media (max-width: 1023px) {
     margin-bottom: 28px;
   }
 
   @media (max-width: 767px) {
-    max-width: 320px;
+    & br {
+      display: block
+    }
+  }
+
+  @media (max-width: 450px) {
+    & br {
+      display: none
+    }
   }
 }
 
@@ -97,6 +109,13 @@
 
     & br {
       display: block;
+    }
+  }
+
+  @media (max-width: 768px) {
+
+    & br {
+      display: none;
     }
   }
 }
