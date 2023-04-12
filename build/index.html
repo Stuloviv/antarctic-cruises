@@ -10,9 +10,6 @@
   <title>Круизы в Антарктику</title>
   <link rel="stylesheet" href="css/style.min.css">
   <link rel="preload" href="fonts/montserrat-regular.woff2" as="font">
-  <link rel="preload" href="fonts/montserrat-medium.woff2" as="font">
-  <link rel="preload" href="fonts/montserrat-semibold.woff2" as="font">
-  <link rel="preload" href="fonts/montserrat-bold.woff2" as="font">
 </head>
 
 <body>
@@ -25,25 +22,27 @@
             <use xlink:href="img/sprite/sprite.svg#logo-icon"></use>
           </svg>
         </a>
-        <nav class="header__navigation">
-          <ul class="header__navigation-list list-null">
-            <li class="header__navigation-item">
-              <a href="#advantages-anchor" class="header__navigation-link">Преимущества</a>
-            </li>
-            <li class="header__navigation-item">
-              <a href="#" class="header__navigation-link">Направления</a>
-            </li>
-            <li class="header__navigation-item">
-              <a href="#products-anchor" class="header__navigation-link">Ближайшие круизы</a>
-            </li>
-            <li class="header__navigation-item">
-              <a href="#contacts-anchor" class="header__navigation-link">Контакты</a>
-            </li>
-          </ul>
-          <button class="header__navigation-toggle" type="button">
-            <span class="visually-hidden">Открыть меню</span>
-          </button>
-        </nav>
+        <div class="header__overlay">
+          <nav class="header__navigation">
+            <ul class="header__navigation-list list-null">
+              <li class="header__navigation-item">
+                <a href="#advantages-anchor" class="header__navigation-link">Преимущества</a>
+              </li>
+              <li class="header__navigation-item">
+                <a href="#" class="header__navigation-link">Направления</a>
+              </li>
+              <li class="header__navigation-item">
+                <a href="#products-anchor" class="header__navigation-link">Ближайшие круизы</a>
+              </li>
+              <li class="header__navigation-item">
+                <a href="#contacts-anchor" class="header__navigation-link">Контакты</a>
+              </li>
+            </ul>
+            <button class="header__navigation-toggle" type="button">
+              <span class="visually-hidden">Открыть меню</span>
+            </button>
+          </nav>
+        </div>
       </div>
       <section class="header__promo promo">
         <div class="promo__container container">
@@ -461,7 +460,8 @@
         <div class="contacts__container container">
           <div class="contacts__map" id="map"></div>
           <div class="contacts__wrapper">
-            <p class="contacts__text">У&nbsp;вас ещё остались вопросы или сомнения? <br>Приезжайте к&nbsp;нам в&nbsp;офис
+            <p class="contacts__text">У&nbsp;вас ещё остались вопросы или сомнения? <br>Приезжайте к&nbsp;нам
+              в&nbsp;офис
               и&nbsp;мы&nbsp;вам все расскажем.</p>
             <p class="contacts__address">
               г. Санкт Петербург, <br>ул. Большая Конюшенная, 19/8

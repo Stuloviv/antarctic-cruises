@@ -41,12 +41,8 @@
   }
 
   @media (max-width: 767px) {
-    grid-template-columns: repeat(2, 270px);
-    justify-content: center;
-  }
-
-  @media (max-width: 620px) {
     display: flex;
+    justify-content: center;
     flex-direction: column;
 
     width: 270px;
