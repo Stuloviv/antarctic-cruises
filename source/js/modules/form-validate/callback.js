@@ -1,6 +1,15 @@
 
+const setMessage = () => {
+  const messageElement = document.querySelector('.booking__form-success-message');
+  messageElement.style.display = 'flex';
+  setTimeout(() => {
+    messageElement.style.display = 'none';
+  }, 3000);
+};
+
 const baseSuccessCallback = (event) => {
   event.preventDefault();
+  setMessage();
   // В данном колбеке бэкендер, либо разработчик при необходимости будет писать запрос на отправку формы на сервер и обрабатывать возможные ошибки или успешную отправку формы на сервер
 };
 

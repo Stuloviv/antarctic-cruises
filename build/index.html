@@ -22,27 +22,25 @@
             <use xlink:href="img/sprite/sprite.svg#logo-icon"></use>
           </svg>
         </a>
-        <div class="header__overlay">
-          <nav class="header__navigation">
-            <ul class="header__navigation-list list-null">
-              <li class="header__navigation-item">
-                <a href="#advantages-anchor" class="header__navigation-link">Преимущества</a>
-              </li>
-              <li class="header__navigation-item">
-                <a href="#" class="header__navigation-link">Направления</a>
-              </li>
-              <li class="header__navigation-item">
-                <a href="#products-anchor" class="header__navigation-link">Ближайшие круизы</a>
-              </li>
-              <li class="header__navigation-item">
-                <a href="#contacts-anchor" class="header__navigation-link">Контакты</a>
-              </li>
-            </ul>
-            <button class="header__navigation-toggle" type="button">
-              <span class="visually-hidden">Открыть меню</span>
-            </button>
-          </nav>
-        </div>
+        <nav class="header__navigation">
+          <ul class="header__navigation-list list-null">
+            <li class="header__navigation-item">
+              <a href="#advantages-anchor" class="header__navigation-link">Преимущества</a>
+            </li>
+            <li class="header__navigation-item">
+              <a href="#" class="header__navigation-link">Направления</a>
+            </li>
+            <li class="header__navigation-item">
+              <a href="#products-anchor" class="header__navigation-link">Ближайшие круизы</a>
+            </li>
+            <li class="header__navigation-item">
+              <a href="#contacts-anchor" class="header__navigation-link">Контакты</a>
+            </li>
+          </ul>
+          <button class="header__navigation-toggle" type="button">
+            <span class="visually-hidden">Открыть меню</span>
+          </button>
+        </nav>
       </div>
       <section class="header__promo promo">
         <div class="promo__container container">
@@ -121,19 +119,21 @@
                 </picture>
               </div>
               <div class="product__card">
-                <span>Круиз “Астория”</span>
-                <dl class="product__card-list">
-                  <dt>Маршрут</dt>
-                  <dd>Аргентина&nbsp;&mdash; Фолклендские острова&nbsp;&mdash;
-                    Антарктида</dd>
-                  <dt>Порт отправления</dt>
-                  <dd>Ушуайя</dd>
-                  <dt>Продолжительность</dt>
-                  <dd>11&nbsp;дней</dd>
-                  <dt>Цена</dt>
-                  <dd>от&nbsp;11500&nbsp;$</dd>
-                </dl>
-                <button class="product__card-button">Забронировать</button>
+                <div class="product__card-wrapper">
+                  <span>Круиз “Астория”</span>
+                  <dl class="product__card-list">
+                    <dt>Маршрут</dt>
+                    <dd>Аргентина&nbsp;&mdash; Фолклендские острова&nbsp;&mdash;
+                      Антарктида</dd>
+                    <dt>Порт отправления</dt>
+                    <dd>Ушуайя</dd>
+                    <dt>Продолжительность</dt>
+                    <dd>11&nbsp;дней</dd>
+                    <dt>Цена</dt>
+                    <dd>от&nbsp;11500&nbsp;$</dd>
+                  </dl>
+                  <button class="product__card-button">Забронировать</button>
+                </div>
               </div>
             </li>
             <li class="products__item product">
@@ -161,18 +161,20 @@
                 </picture>
               </div>
               <div class="product__card">
-                <span>Круиз “Элайн”</span>
-                <dl class="product__card-list">
-                  <dt>Маршрут</dt>
-                  <dd>Аргентина - Фолклендские острова - Антарктида - Чили</dd>
-                  <dt>Порт отправления</dt>
-                  <dd>Буэнос-Айрес</dd>
-                  <dt>Продолжительность</dt>
-                  <dd>20&nbsp;дней</dd>
-                  <dt>Цена</dt>
-                  <dd>от&nbsp;14500&nbsp;$</dd>
-                </dl>
-                <button class="product__card-button">Забронировать</button>
+                <div class="product__card-wrapper">
+                  <span>Круиз “Элайн”</span>
+                  <dl class="product__card-list">
+                    <dt>Маршрут</dt>
+                    <dd>Аргентина - Фолклендские острова - Антарктида - Чили</dd>
+                    <dt>Порт отправления</dt>
+                    <dd>Буэнос-Айрес</dd>
+                    <dt>Продолжительность</dt>
+                    <dd>20&nbsp;дней</dd>
+                    <dt>Цена</dt>
+                    <dd>от&nbsp;14500&nbsp;$</dd>
+                  </dl>
+                  <button class="product__card-button">Забронировать</button>
+                </div>
               </div>
             </li>
             <li class="products__item product">
@@ -200,19 +202,21 @@
                 </picture>
               </div>
               <div class="product__card">
-                <span>Круиз “Атлантис”</span>
-                <dl class="product__card-list">
-                  <dt>Маршрут</dt>
-                  <dd>Аргентина&nbsp;&mdash; Южная Георгия и&nbsp;Южные Сандвичевы
-                    Острова&nbsp;&mdash; Антарктида</dd>
-                  <dt>Порт отправления</dt>
-                  <dd>Ушуайя</dd>
-                  <dt>Продолжительность</dt>
-                  <dd>15&nbsp;дней</dd>
-                  <dt>Цена</dt>
-                  <dd>от&nbsp;14500&nbsp;$</dd>
-                </dl>
-                <button class="product__card-button">Забронировать</button>
+                <div class="product__card-wrapper">
+                  <span>Круиз “Атлантис”</span>
+                  <dl class="product__card-list">
+                    <dt>Маршрут</dt>
+                    <dd>Аргентина&nbsp;&mdash; Южная Георгия и&nbsp;Южные Сандвичевы
+                      Острова&nbsp;&mdash; Антарктида</dd>
+                    <dt>Порт отправления</dt>
+                    <dd>Ушуайя</dd>
+                    <dt>Продолжительность</dt>
+                    <dd>15&nbsp;дней</dd>
+                    <dt>Цена</dt>
+                    <dd>от&nbsp;14500&nbsp;$</dd>
+                  </dl>
+                  <button class="product__card-button">Забронировать</button>
+                </div>
               </div>
             </li>
             <li class="products__item product">
@@ -240,18 +244,20 @@
                 </picture>
               </div>
               <div class="product__card">
-                <span>Круиз “Одиссей”</span>
-                <dl class="product__card-list">
-                  <dt>Маршрут</dt>
-                  <dd>Чили&nbsp;&mdash; Антарктида</dd>
-                  <dt>Порт отправления</dt>
-                  <dd>Пунта-Аренас</dd>
-                  <dt>Продолжительность</dt>
-                  <dd>13&nbsp;дней</dd>
-                  <dt>Цена</dt>
-                  <dd>от&nbsp;9700&nbsp;$</dd>
-                </dl>
-                <button class="product__card-button">Забронировать</button>
+                <div class="product__card-wrapper">
+                  <span>Круиз “Одиссей”</span>
+                  <dl class="product__card-list">
+                    <dt>Маршрут</dt>
+                    <dd>Чили&nbsp;&mdash; Антарктида</dd>
+                    <dt>Порт отправления</dt>
+                    <dd>Пунта-Аренас</dd>
+                    <dt>Продолжительность</dt>
+                    <dd>13&nbsp;дней</dd>
+                    <dt>Цена</dt>
+                    <dd>от&nbsp;9700&nbsp;$</dd>
+                  </dl>
+                  <button class="product__card-button">Забронировать</button>
+                </div>
               </div>
             </li>
             <li class="products__item product">
@@ -279,19 +285,21 @@
                 </picture>
               </div>
               <div class="product__card">
-                <span>Круиз “Олимпия”</span>
-                <dl class="product__card-list">
-                  <dt>Маршрут</dt>
-                  <dd>Аргентина&nbsp;&mdash; Фолклендские острова&nbsp;&mdash; Южная
-                    Георгия&nbsp;&mdash; Антарктида</dd>
-                  <dt>Порт отправления</dt>
-                  <dd>Ушуайяс</dd>
-                  <dt>Продолжительность</dt>
-                  <dd>21&nbsp;дней</dd>
-                  <dt>Цена</dt>
-                  <dd>от&nbsp;18600&nbsp;$</dd>
-                </dl>
-                <button class="product__card-button">Забронировать</button>
+                <div class="product__card-wrapper">
+                  <span>Круиз “Олимпия”</span>
+                  <dl class="product__card-list">
+                    <dt>Маршрут</dt>
+                    <dd>Аргентина&nbsp;&mdash; Фолклендские острова&nbsp;&mdash; Южная
+                      Георгия&nbsp;&mdash; Антарктида</dd>
+                    <dt>Порт отправления</dt>
+                    <dd>Ушуайяс</dd>
+                    <dt>Продолжительность</dt>
+                    <dd>21&nbsp;дней</dd>
+                    <dt>Цена</dt>
+                    <dd>от&nbsp;18600&nbsp;$</dd>
+                  </dl>
+                  <button class="product__card-button">Забронировать</button>
+                </div>
               </div>
             </li>
             <li class="products__item product">
@@ -319,18 +327,20 @@
                 </picture>
               </div>
               <div class="product__card">
-                <span>Круиз “Аврора”</span>
-                <dl class="product__card-list">
-                  <dt>Маршрут</dt>
-                  <dd>Аргентина&nbsp;&mdash; Антарктида&nbsp;&mdash; Чили</dd>
-                  <dt>Порт отправления</dt>
-                  <dd>Ушуайя</dd>
-                  <dt>Продолжительность</dt>
-                  <dd>14&nbsp;дней</dd>
-                  <dt>Цена</dt>
-                  <dd>от&nbsp;11700&nbsp;$</dd>
-                </dl>
-                <button class="product__card-button">Забронировать</button>
+                <div class="product__card-wrapper">
+                  <span>Круиз “Аврора”</span>
+                  <dl class="product__card-list">
+                    <dt>Маршрут</dt>
+                    <dd>Аргентина&nbsp;&mdash; Антарктида&nbsp;&mdash; Чили</dd>
+                    <dt>Порт отправления</dt>
+                    <dd>Ушуайя</dd>
+                    <dt>Продолжительность</dt>
+                    <dd>14&nbsp;дней</dd>
+                    <dt>Цена</dt>
+                    <dd>от&nbsp;11700&nbsp;$</dd>
+                  </dl>
+                  <button class="product__card-button">Забронировать</button>
+                </div>
               </div>
             </li>
             <li class="products__item product">
@@ -358,19 +368,21 @@
                 </picture>
               </div>
               <div class="product__card">
-                <span>Круиз “Леонор”</span>
-                <dl class="product__card-list">
-                  <dt>Маршрут</dt>
-                  <dd>Чили&nbsp;&mdash; Южная Георгия&nbsp;&mdash;
-                    Антарктида&nbsp;&mdash; Аргентина</dd>
-                  <dt>Порт отправления</dt>
-                  <dd>Пунта-Аренас</dd>
-                  <dt>Продолжительность</dt>
-                  <dd>17&nbsp;дней</dd>
-                  <dt>Цена</dt>
-                  <dd>от&nbsp;12500&nbsp;$</dd>
-                </dl>
-                <button class="product__card-button">Забронировать</button>
+                <div class="product__card-wrapper">
+                  <span>Круиз “Леонор”</span>
+                  <dl class="product__card-list">
+                    <dt>Маршрут</dt>
+                    <dd>Чили&nbsp;&mdash; Южная Георгия&nbsp;&mdash;
+                      Антарктида&nbsp;&mdash; Аргентина</dd>
+                    <dt>Порт отправления</dt>
+                    <dd>Пунта-Аренас</dd>
+                    <dt>Продолжительность</dt>
+                    <dd>17&nbsp;дней</dd>
+                    <dt>Цена</dt>
+                    <dd>от&nbsp;12500&nbsp;$</dd>
+                  </dl>
+                  <button class="product__card-button">Забронировать</button>
+                </div>
               </div>
             </li>
             <li class="products__item product">
@@ -399,20 +411,23 @@
                 </picture>
               </div>
               <div class="product__card">
-                <span>Круиз Минион&nbsp;&mdash; 1</span>
-                <dl class="product__card-list">
-                  <dt>Маршрут</dt>
-                  <dd>Аргентина&nbsp;&mdash; Антарктида</dd>
-                  <dt>Порт отправления</dt>
-                  <dd>Буэнос-Айрес</dd>
-                  <dt>Продолжительность</dt>
-                  <dd>11&nbsp;дней</dd>
-                  <dt>Цена</dt>
-                  <dd>от&nbsp;12300&nbsp;$</dd>
-                </dl>
-                <button class="product__card-button">Забронировать</button>
+                <div class="product__card-wrapper">
+                  <span>Круиз Минион&nbsp;&mdash; 1</span>
+                  <dl class="product__card-list">
+                    <dt>Маршрут</dt>
+                    <dd>Аргентина&nbsp;&mdash; Антарктида</dd>
+                    <dt>Порт отправления</dt>
+                    <dd>Буэнос-Айрес</dd>
+                    <dt>Продолжительность</dt>
+                    <dd>11&nbsp;дней</dd>
+                    <dt>Цена</dt>
+                    <dd>от&nbsp;12300&nbsp;$</dd>
+                  </dl>
+                  <button class="product__card-button">Забронировать</button>
+                </div>
               </div>
             </li>
+
           </ul>
         </div>
       </section>
@@ -460,8 +475,7 @@
         <div class="contacts__container container">
           <div class="contacts__map" id="map"></div>
           <div class="contacts__wrapper">
-            <p class="contacts__text">У&nbsp;вас ещё остались вопросы или сомнения? <br>Приезжайте к&nbsp;нам
-              в&nbsp;офис
+            <p class="contacts__text">У&nbsp;вас ещё остались вопросы или сомнения? Приезжайте к&nbsp;нам в&nbsp;офис
               и&nbsp;мы&nbsp;вам все расскажем.</p>
             <p class="contacts__address">
               г. Санкт Петербург, <br>ул. Большая Конюшенная, 19/8

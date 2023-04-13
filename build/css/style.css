@@ -683,6 +683,10 @@ button,
   fill: #f9fbfd;
 }
 
+.header__logo-icon:hover {
+  fill: #a7d3eb;
+}
+
 .header__navigation {
   max-width: 70%;
 }
@@ -708,6 +712,10 @@ button,
   line-height: 19px;
   font-weight: 500;
   color: #f9fbfd;
+}
+
+.header__navigation-link:hover {
+  color: #a7d3eb;
 }
 
 .header__navigation-toggle {
@@ -896,12 +904,12 @@ button,
 
 .product {
   position: relative;
-  height: 386px;
   cursor: pointer;
   -webkit-transform-style: preserve-3d;
   transform-style: preserve-3d;
   -webkit-perspective: 1000px;
   perspective: 1000px;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 
 .product:hover .product__wrapper,
@@ -917,10 +925,9 @@ button,
 }
 
 .product__wrapper {
-  position: absolute;
+  position: relative;
   top: 0;
   left: 0;
-  height: 100%;
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
   -webkit-transition-duration: 1s;
@@ -942,13 +949,16 @@ button,
 .product img {
   display: block;
   width: 100%;
-  height: 100%;
+  max-width: 100%;
+  height: auto;
   -o-object-fit: cover;
   object-fit: cover;
 }
 
 .product__card {
-  position: relative;
+  position: absolute;
+  top: 0;
+  left: 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -956,6 +966,7 @@ button,
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
   flex-direction: column;
+  width: 100%;
   height: 100%;
   padding: 29px 25px 34px;
   color: #f9fbfd;
@@ -969,6 +980,19 @@ button,
   backface-visibility: hidden;
 }
 
+.product__card-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  overflow-y: scroll;
+}
+
 .product__card span {
   margin: 0;
   margin-bottom: 14px;
@@ -978,12 +1002,10 @@ button,
 }
 
 .product__card-list {
-  height: 225px;
   margin: 0;
   font-size: 14px;
   line-height: 20px;
   font-weight: 400;
-  overflow-y: scroll;
 }
 
 .product__card-list dt {
@@ -1007,6 +1029,15 @@ button,
   line-height: 21px;
   font-weight: 600;
   background-color: #f9fbfd;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.product__card-button:hover {
+  background-color: #a7d3eb;
 }
 
 .booking {
@@ -1057,6 +1088,7 @@ button,
 }
 
 .booking__form {
+  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1109,6 +1141,14 @@ button,
   cursor: pointer;
 }
 
+.booking__form label:hover {
+  color: #a7d3eb;
+}
+
+.booking__form label:focus {
+  color: #a7d3eb;
+}
+
 .booking__form input {
   width: 100%;
   padding: 11px 0 11px 16px;
@@ -1142,6 +1182,10 @@ button,
   background-color: #a7d3eb;
 }
 
+.booking__form input[type=checkbox]:hover + label::before {
+  background-color: #a7d3eb;
+}
+
 .booking__form button {
   width: 100%;
   margin-top: 10px;
@@ -1154,6 +1198,10 @@ button,
   color: #011c40;
   background-color: #f9fbfd;
   cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 
 .booking__form button:hover {
@@ -1164,6 +1212,31 @@ button,
   background-color: #a7d3eb;
   -webkit-box-shadow: inset 2px 2px #011c40;
   box-shadow: inset 2px 2px #011c40;
+}
+
+.booking__form-success-message {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 36px;
+  text-align: center;
+  color: #f9fbfd;
+  background-color: #011c40;
+}
+
+.booking__form-success-message {
+  display: none;
 }
 
 .contacts__container {
@@ -1229,6 +1302,9 @@ button,
 }
 
 .contacts__link {
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
   padding-left: 28px;
   font-size: 16px;
   line-height: 24px;
@@ -1261,6 +1337,10 @@ button,
   fill: #f9fbfd;
 }
 
+.footer__logo-icon:hover {
+  fill: #a7d3eb;
+}
+
 .footer__navigation {
   max-width: 70%;
 }
@@ -1285,6 +1365,10 @@ button,
   color: #f9fbfd;
 }
 
+.footer__navigation-link:hover {
+  color: #a7d3eb;
+}
+
 .footer__social {
   width: 20%;
   margin-left: auto;
@@ -1307,6 +1391,10 @@ button,
 
 .footer__social-icon {
   fill: #f9fbfd;
+}
+
+.footer__social-icon:hover {
+  fill: #a7d3eb;
 }
 
 /* @mixin hover-focus {
@@ -1665,6 +1753,11 @@ button,
     height: 42px;
     border: none;
     background-color: transparent;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
   }
 
   .is-close .header__navigation-list {
@@ -1675,20 +1768,10 @@ button,
     visibility: hidden;
   }
 
-  .is-open .header__overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: 1;
-  }
-
   .is-open .header__navigation {
     position: absolute;
     top: 0;
     right: 0;
-    z-index: 2;
     display: block;
     width: 89%;
     height: 100vh;
@@ -1841,22 +1924,34 @@ button,
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
     flex-direction: column;
-    width: 270px;
     margin: 0 auto;
   }
 
   .product h3 {
     bottom: 17px;
     left: 25px;
-  }
-
-  .product img {
-    width: 270px;
+    font-size: 5.6vw;
+    line-height: 8.4vw;
   }
 
   .product__card {
     padding-right: 25px;
     padding-left: 25px;
+  }
+
+  .product__card span {
+    font-size: 5.6vw;
+    line-height: 8.4vw;
+  }
+
+  .product__card-list {
+    font-size: 4.4vw;
+    line-height: 5.9vw;
+  }
+
+  .product__card-button {
+    font-size: 4.4vw;
+    line-height: 6.5vw;
   }
 
   .booking {

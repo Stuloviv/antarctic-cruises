@@ -38,6 +38,10 @@
 .footer__logo-icon {
   fill: $color-project-white;
 
+  &:hover {
+    fill: #a7d3eb;
+  }
+
   @media (max-width: 1023px) {
     width: 38px;
     height: 20px;
@@ -80,6 +84,10 @@
   font-weight: 500;
   color: $color-project-white;
 
+  &:hover {
+    color: #a7d3eb;
+  }
+
   @media (max-width: 1023px) {
     font-size: 12px;
     line-height: 14px;
@@ -116,6 +124,10 @@
 
 .footer__social-icon {
   fill: $color-project-white;
+
+  &:hover {
+    fill: #a7d3eb;
+  }
 
   @media (max-width: 1023px) {
     height: 16px;
