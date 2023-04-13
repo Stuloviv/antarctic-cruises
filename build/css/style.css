@@ -895,8 +895,8 @@ button,
 .products__list {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (23%)[4];
-  grid-template-columns: repeat(4, 23%);
+  -ms-grid-columns: (1fr)[4];
+  grid-template-columns: repeat(4, 1fr);
   gap: 30px;
   -webkit-perspective: 10000px;
   perspective: 10000px;
@@ -1468,6 +1468,16 @@ button,
     padding-right: 45px;
   }
 
+  .products__container {
+    padding-left: 60px;
+    padding-right: 60px;
+  }
+
+  .products__list {
+    -ms-grid-columns: (1fr)[3];
+    grid-template-columns: repeat(3, 1fr);
+  }
+
   .contacts__container {
     gap: 30px;
     padding-left: 45px;
@@ -1482,9 +1492,9 @@ button,
 
 @media (max-width: 1023px) {
   .container {
-    max-width: 680px;
-    padding-left: 0;
-    padding-right: 0;
+    max-width: 100%;
+    padding-left: 45px;
+    padding-right: 45px;
   }
 
   .header {
@@ -1522,7 +1532,7 @@ button,
   }
 
   .promo__container {
-    padding: 183px 0 275px 0;
+    padding: 183px 45px 275px 45px;
   }
 
   .promo__title {
@@ -1543,6 +1553,13 @@ button,
   }
 
   .about__container {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[2];
+    grid-template-columns: repeat(2, 1fr);
+    -webkit-column-gap: 30px;
+    -moz-column-gap: 30px;
+    column-gap: 30px;
     -webkit-box-align: normal;
     -ms-flex-align: normal;
     align-items: normal;
@@ -1551,7 +1568,7 @@ button,
   }
 
   .about__wrapper {
-    width: 320px;
+    width: 100%;
     margin-right: 0;
   }
 
@@ -1562,8 +1579,9 @@ button,
   }
 
   .about img {
-    width: 324px;
-    height: 174px;
+    width: 100%;
+    max-width: 100%;
+    height: auto;
   }
 
   .advantages {
@@ -1571,7 +1589,7 @@ button,
   }
 
   .advantages__container {
-    padding: 91px 0 98px;
+    padding: 91px 45px 98px;
   }
 
   .advantages__list {
@@ -1600,7 +1618,7 @@ button,
   }
 
   .products__container {
-    padding: 92px 15px 100px;
+    padding: 92px 60px 100px;
   }
 
   .products__title {
@@ -1608,8 +1626,8 @@ button,
   }
 
   .products__list {
-    -ms-grid-columns: (309px)[2];
-    grid-template-columns: repeat(2, 309px);
+    -ms-grid-columns: (1fr)[2];
+    grid-template-columns: repeat(2, 1fr);
   }
 
   .product h3 {
@@ -1846,6 +1864,9 @@ button,
   }
 
   .about__container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
@@ -1905,8 +1926,7 @@ button,
   }
 
   .products__container {
-    padding-top: 58px;
-    padding-bottom: 65px;
+    padding: 58px 25px 65px;
   }
 
   .products__title {
