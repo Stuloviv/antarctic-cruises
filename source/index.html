@@ -114,8 +114,7 @@
                   <source media="(max-width: 1023px)"
                     srcset="img/services/services-astoria-tablet.jpg 1x, img/services/services-astoria-tablet@2x.jpg 2x"
                     width="309" height="386">
-                  <img src="img/services/services-astoria.jpg"
-                    srcset="img/services/services-astoria@2x.jpg 2x"
+                  <img src="img/services/services-astoria.jpg" srcset="img/services/services-astoria@2x.jpg 2x"
                     alt="Фото видов, которые Вы увидите во время круиза “Астория”." width="260" height="386">
                 </picture>
               </div>
@@ -155,8 +154,7 @@
                   <source media="(max-width: 1023px)"
                     srcset="img/services/services-leonor-tablet.jpg 1x, img/services/services-leonor-tablet@2x.jpg 2x"
                     width="309" height="386">
-                  <img src="img/services/services-leonor.jpg"
-                    srcset="img/services/services-leonor@2x.jpg"
+                  <img src="img/services/services-leonor.jpg" srcset="img/services/services-leonor@2x.jpg"
                     alt="Фото видов, которые Вы увидите во время круиза Элайн" width="260" height="386">
                 </picture>
               </div>
@@ -195,8 +193,7 @@
                   <source media="(max-width: 1023px)"
                     srcset="img/services/services-atlantis-tablet.jpg 1x, img/services/services-atlantis-tablet@2x.jpg 2x"
                     width="309" height="386">
-                  <img src="img/services/services-atlantis.jpg"
-                    srcset="img/services/services-atlantis@2x.jpg 2x"
+                  <img src="img/services/services-atlantis.jpg" srcset="img/services/services-atlantis@2x.jpg 2x"
                     alt="Фото видов, которые Вы увидите во время круиза “Атлантис”" width="260" height="386">
                 </picture>
               </div>
@@ -236,8 +233,7 @@
                   <source media="(max-width: 1023px)"
                     srcset="img/services/services-odissey-tablet.jpg 1x, img/services/services-odissey-tablet@2x.jpg 2x"
                     width="309" height="386">
-                  <img src="img/services/services-odissey.jpg"
-                    srcset="img/services/services-odissey@2x.jpg 2x"
+                  <img src="img/services/services-odissey.jpg" srcset="img/services/services-odissey@2x.jpg 2x"
                     alt="Фото видов, которые Вы увидите во время круиза “Одиссей”" width="260" height="386">
                 </picture>
               </div>
@@ -276,8 +272,7 @@
                   <source media="(max-width: 1023px)"
                     srcset="img/services/services-olimpia-tablet.jpg 1x, img/services/services-olimpia-tablet@2x.jpg 2x"
                     width="309" height="386">
-                  <img src="img/services/services-olimpia.jpg"
-                    srcset="img/services/services-olimpia@2x.jpg 2x"
+                  <img src="img/services/services-olimpia.jpg" srcset="img/services/services-olimpia@2x.jpg 2x"
                     alt="Фото видов, которые Вы увидите во время круиза “Олимпия”" width="260" height="386">
                 </picture>
               </div>
@@ -317,8 +312,7 @@
                   <source media="(max-width: 1023px)"
                     srcset="img/services/services-aurora-tablet.jpg 1x, img/services/services-aurora-tablet@2x.jpg 2x"
                     width="309" height="386">
-                  <img src="img/services/services-aurora.jpg"
-                    srcset="img/services/services-aurora@2x.jpg 2x"
+                  <img src="img/services/services-aurora.jpg" srcset="img/services/services-aurora@2x.jpg 2x"
                     alt="Фото видов, которые Вы увидите во время круиза “Аврора”" width="260" height="386">
                 </picture>
               </div>
@@ -357,8 +351,7 @@
                   <source media="(max-width: 1023px)"
                     srcset="img/services/services-leonor-tablet.jpg 1x, img/services/services-leonor-tablet@2x.jpg 2x"
                     width="309" height="386">
-                  <img src="img/services/services-leonor.jpg"
-                    srcset="img/services/services-leonor@2x.jpg 2x"
+                  <img src="img/services/services-leonor.jpg" srcset="img/services/services-leonor@2x.jpg 2x"
                     alt="Фото видов, которые Вы увидите во время круиза “Леонор”." width="260" height="386">
                 </picture>
               </div>
@@ -398,8 +391,7 @@
                   <source media="(max-width: 1023px)"
                     srcset="img/services/services-minion-tablet.jpg 1x, img/services/services-minion-tablet@2x.jpg 2x"
                     width="309" height="386">
-                  <img src="img/services/services-minion.jpg"
-                    srcset="img/services/services-minion@2x.jpg 2x"
+                  <img src="img/services/services-minion.jpg" srcset="img/services/services-minion@2x.jpg 2x"
                     alt="Фото видов, которые Вы увидите во время круиза “Минион&nbsp;&mdash; 1”" width="260"
                     height="386">
                 </picture>
@@ -536,9 +528,45 @@
       </div>
     </footer>
   </div>
-  <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU"></script>
   <script src="js/vendor.min.js"></script>
   <script src="js/main.min.js"></script>
+  <script>
+    setTimeout(function () {
+      let elem = document.createElement('script');
+      elem.src = '//api-maps.yandex.ru/2.1/?lang=ru_RU&onload=getYaMap';
+      document.getElementsByTagName('body')[0].appendChild(elem);
+    }, 3500);
+
+    function getYaMap() {
+      let myMap = new ymaps.Map('map', {
+        center: [59.938631, 30.323037],
+        zoom: 15.5,
+        controls: [],
+      }, {
+        suppressMapOpenBlock: true,
+      });
+
+      let MyIconContentLayout = ymaps.templateLayoutFactory.createClass(
+        '<div style="color: #FFFFFF; font-weight: bold;">$[properties.iconContent]</div>'
+      );
+
+      let myPlacemarkWithContent = new ymaps.Placemark([59.938631, 30.323037], {
+        hintContent: 'г. Санкт Петербург, ул. Большая Конюшенная, 19/8',
+        balloonContent: 'Наши контакты:<br>8-800-200-00-00<br>г. Санкт Петербург, ул. Большая Конюшенная, 19/8',
+        iconContent: '',
+      }, {
+        iconLayout: 'default#imageWithContent',
+        iconImageHref: '../img/icons/marker-icon.svg',
+        iconImageSize: [18, 22],
+        iconImageOffset: [-9, -22],
+        iconContentLayout: MyIconContentLayout,
+      });
+
+      myMap.geoObjects
+        .add(myPlacemarkWithContent);
+    }
+
+  </script>
 
 </body>
 
