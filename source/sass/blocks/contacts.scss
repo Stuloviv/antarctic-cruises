@@ -131,4 +131,9 @@
   background-image: url("../img/icons/phone-icon.svg");
   background-repeat: no-repeat;
   background-position-y: 2px;
+
+  &:hover,
+  &:focus {
+    font-weight: 600;
+  }
 }

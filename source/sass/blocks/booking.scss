@@ -194,6 +194,11 @@
   color: $color-project-black;
 
   background-color: $color-project-white;
+
+  &:hover,
+  &:focus {
+    background-color: #a7d3eb;
+  }
 }
 
 .booking__form input[type="checkbox"] + label::before {

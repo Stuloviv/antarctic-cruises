@@ -1161,6 +1161,11 @@ button,
   background-color: #f9fbfd;
 }
 
+.booking__form input:hover,
+.booking__form input:focus {
+  background-color: #a7d3eb;
+}
+
 .booking__form input[type=checkbox] + label::before {
   content: "";
   position: absolute;
@@ -1313,6 +1318,11 @@ button,
   background-image: url("../img/icons/phone-icon.svg");
   background-repeat: no-repeat;
   background-position-y: 2px;
+}
+
+.contacts__link:hover,
+.contacts__link:focus {
+  font-weight: 600;
 }
 
 .footer {
